@@ -1,97 +1,76 @@
 class Array
-
-  def my_each
+  def my_each(&blk)
     self.length.times do |i|
-      yield self[i]
+      blk.call(self[i])
     end
     self
   end
 
-  def my_select(&prc)
+  def my_select(&blk)
     selected = []
-    self.my_each do |s|
-      selected << s if prc.call(s)
+    self.my_each do |el|
+      selected << el if blk.call(el)
     end
     selected
   end
 
-  def my_reject(&prc)
+  def my_reject(&blk)
     rejected = []
-    self.my_each do |r|
-      rejected << r if !prc.call(r)
+    self.my_each do |el|
+      rejected << el unless blk.call(el)
     end
     rejected
   end
 
-  def my_any?(&prc)
-    self.my_each do |an|
-      return true if prc.call(an)
-    end
+  def my_any?(&blk)
+    self.my_each { |el| return true if blk.call(el) }
     false
   end
 
-  def my_all?(&prc)
-    self.my_each do |al|
-      return false if !prc.call(al)
-    end
-    true
-  end
-
   def my_flatten
-    flattened = []
-    self.my_each do |f|
-      f.is_a?(Integer) ? flattened << f : flattened += f.my_flatten
+    flattened = Array.new
+    self.my_each do |el|
+      if el.is_a?(Array)
+        flattened += el.my_flatten
+      else
+        flattened << el
+      end
     end
     flattened
   end
 
   def my_zip(*args)
-    results = []
+    zipped = Array.new
     self.length.times do |i|
-      nested = []
-      nested << self[i]
-      args.my_each { |arr| nested << arr[i] }
-      results << nested
-      nested = []
+      nested_zip = [self[i]]
+      args.my_each { |arr| nested_zip << arr[i] }
+      zipped << nested_zip
     end
-    results
+    zipped
   end
 
   def my_rotate(n = 1)
     rotated = self.dup
     if n > 0
-      n.times do |i|
-        first = rotated.shift
-        rotated.push(first)
-      end
+      n.times { rotated << rotated.shift }
     else
-      n.abs.times do |i|
-        last = rotated.pop
-        rotated.unshift(last)
-      end
+      n.abs.times { rotated = [rotated.pop] + rotated }
     end
     rotated
   end
 
-  def my_join(sep = "")
-    answer = ""
-    (self.length - 1).times do |i|
-      answer += self[i]
-      answer += sep
+  def my_join(separator = "")
+    joined = ""
+    self.length.times do |i|
+      joined += self[i]
+      joined += separator unless i == self.length - 1
     end
-    answer += self.last
-    answer
+    joined
   end
 
   def my_reverse
-    reversed = []
-    self.length.times do |i|
-      reversed << self.pop
-    end
+    reversed = Array.new
+    self.my_each { |el| reversed.unshift(el) }
     reversed
   end
-
 end
-
-p [ "a", "b", "c" ].my_reverse   #=> ["c", "b", "a"]
-p [ 1 ].my_reverse               #=> [1]
