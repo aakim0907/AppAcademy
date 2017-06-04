@@ -92,7 +92,7 @@ def bsearch(array, target)
   if middle_value < target
     search_results = bsearch(array[middle_index + 1..-1], target)
     search_results ? search_results + middle_index + 1 : search_results
-  else middle_value > target
+  else 
     bsearch(array[0...middle_index], target)
   end
 end
