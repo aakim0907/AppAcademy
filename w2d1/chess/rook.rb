@@ -1,6 +1,5 @@
 require_relative 'piece'
 require_relative 'sliding_piece'
-# require_relative 'board'
 
 class Rook < Piece
 include SlidingPiece

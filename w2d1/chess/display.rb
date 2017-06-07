@@ -12,7 +12,7 @@ class Display
 
   def render
     @board.grid.each_with_index do |row, x|
-      row.each_with_index do |col, y|
+      row.each_with_index do |_, y|
         piece = @board[[x, y]]
         if @cursor.cursor_pos == [x, y]
           if @cursor.selected

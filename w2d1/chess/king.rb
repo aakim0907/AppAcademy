@@ -1,6 +1,5 @@
 require_relative 'piece'
 require_relative 'stepping_piece'
-# require_relative 'board'
 
 class King < Piece
 include SteppingPiece

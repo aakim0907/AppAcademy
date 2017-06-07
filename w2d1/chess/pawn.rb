@@ -1,6 +1,5 @@
 require_relative 'piece'
 require_relative 'stepping_piece'
-# require_relative 'board'
 
 class Pawn < Piece
   def initialize(pos, color = :whatever, board)
@@ -25,9 +24,9 @@ class Pawn < Piece
     x, y = @start_pos
     step = forward_dir
     if at_start_row?
-      [[x + step, y], [x + step * 2, y ]]
+      [[x + step, y], [x + step * 2, y]]
     else
-      [[x + step, y ]]
+      [[x + step, y]]
     end
   end
 
@@ -41,7 +40,3 @@ class Pawn < Piece
   end
 
 end
-
-# board = Board.new
-# pawn = Pawn.new([1,1], :white, board)
-# p pawn.moves

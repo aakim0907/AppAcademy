@@ -44,17 +44,15 @@ class Cursor
 
   def get_input
     begin
-      puts "please enter a move"
+      puts ">Please enter a move!"
       key = KEYMAP[read_char]
-      # debugger
       handle_key(key)
-      raise "invalid move" unless @board.in_bounds(@cursor_pos)
+      raise ">Invalid move" unless @board.in_bounds(@cursor_pos)
     rescue
-      puts "Invalid move! Try again!"
+      puts ">Invalid move! Try again!"
       @cursor_pos = @prev_pos
       retry
     end
-    # @cursor_pos
   end
 
   def toggle_selected
@@ -107,8 +105,6 @@ class Cursor
     end
   end
 
-
-
   def update_pos(diff)
     x, y = diff
     @prev_pos = @cursor_pos
@@ -116,7 +112,5 @@ class Cursor
     @cursor_pos = new_pos
     nil
   end
-
-
 
 end

@@ -1,5 +1,3 @@
-# require_relative 'board'
-
 class Piece
   attr_reader :symbol, :start_pos, :board, :color
   attr_accessor :current_pos
@@ -14,11 +12,7 @@ class Piece
   end
 
   def to_s
-    if @color == :black
-      @black_symbol
-    else
-      @white_symbol
-    end
+    @color == :black ? @black_symbol : @white_symbol
   end
 
   def same_team?(pos)
@@ -30,8 +24,7 @@ class Piece
   end
 
   def valid_moves
-    # debugger
-    moves.reject{|pos| move_into_check?(pos) }
+    moves.reject { |pos| move_into_check?(pos) }
   end
 
   def move_into_check?(end_pos)
@@ -41,9 +34,15 @@ class Piece
   end
 
   def double
-    self.dup
+    dup
   end
 
+end
 
+class NullPiece < Piece
+
+  def to_s
+    " "
+  end
 
 end
