@@ -1,4 +1,3 @@
-
 module SteppingPiece
 
   KNIGHT_DIRS = [[-2,1],[-2,-1],[-1,-2],[1,-2],[-1,2],[1,2],[2,1],[2,-1]]
@@ -9,9 +8,9 @@ module SteppingPiece
     potential_moves = []
 
     if self.is_a?(King)
-      KING_DIRS.each {|el| potential_moves << move_diffs(el)}
+      KING_DIRS.each { |el| potential_moves << move_diffs(el) }
     else
-      KNIGHT_DIRS.each {|el| potential_moves << move_diffs(el)}
+      KNIGHT_DIRS.each { |el| potential_moves << move_diffs(el) }
     end
 
     potential_moves

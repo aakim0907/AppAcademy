@@ -1,15 +1,14 @@
-require_relative 'rook'
-require_relative 'knight'
-require_relative 'king'
-require_relative 'queen'
-require_relative 'bishop'
-require_relative 'pawn'
+require_relative 'rook.rb'
+require_relative 'knight.rb'
+require_relative 'king.rb'
+require_relative 'queen.rb'
+require_relative 'bishop.rb'
+require_relative 'pawn.rb'
 
 class Board
-
   attr_reader :grid
 
-  def initialize(grid=nil)
+  def initialize(grid = nil)
     grid ||= populate_grid
     @grid = grid
   end
@@ -19,11 +18,11 @@ class Board
 
     board.each_with_index do |row, x|
       if x.between?(2,5)
-        row.size.times {|i| row[i] = NullPiece.new([x, i], :whatever, self)}
+        row.size.times { |i| row[i] = NullPiece.new([x, i], :whatever, self) }
       elsif x == 1
-        row.size.times {|i| row[i] = Pawn.new([x, i], :white, self)}
+        row.size.times { |i| row[i] = Pawn.new([x, i], :white, self) }
       elsif x == 6
-        row.size.times {|i| row[i] = Pawn.new([x, i], :black, self)}
+        row.size.times { |i| row[i] = Pawn.new([x, i], :black, self) }
       else
         board[x] = set_non_pawns(x)
       end
@@ -60,13 +59,13 @@ class Board
   end
 
   def [](pos)
-    x, y =pos
+    x, y = pos
     @grid[x][y]
   end
 
   def []=(pos, value)
-    x, y =pos
-    @grid[x][y]=value
+    x, y = pos
+    @grid[x][y] = value
   end
 
   def in_bounds(pos)
@@ -91,9 +90,7 @@ class Board
 
   def dup
     newgrid = @grid.map do |row|
-      row.map do |ele|
-        ele.double
-      end
+      row.map(&:double)
     end
     Board.new(newgrid)
   end
@@ -102,8 +99,4 @@ class Board
     self[start_pos], self[end_pos] = self[end_pos], self[start_pos]
   end
 
-
 end
-
-board = Board.new
-p board[[1,0]].valid_moves

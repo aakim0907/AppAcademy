@@ -8,7 +8,7 @@ module SlidingPiece
 
     move_dirs.each do |dir|
       dx, dy = dir
-      move_array.concat grow_unblocked_moves_in_dir(dx, dy)
+      move_array.concat(grow_unblocked_moves_in_dir(dx, dy))
     end
     move_array
   end
@@ -28,11 +28,11 @@ module SlidingPiece
     newpos = [x + dx, y + dy]
     possible_positions = []
 
-    while self.board.in_bounds(newpos)
-      if self.board.empty?(newpos)
+    while @board.in_bounds(newpos)
+      if @board.empty?(newpos)
         possible_positions << newpos.dup
       else
-        if self.same_team?(newpos)
+        if same_team?(newpos)
           break
         else
           possible_positions << newpos.dup

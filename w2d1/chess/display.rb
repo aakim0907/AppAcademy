@@ -16,19 +16,19 @@ class Display
         piece = @board[[x, y]]
         if @cursor.cursor_pos == [x, y]
           if @cursor.selected
-            print "#{piece} ".blue.on_red.blink
+            print "#{piece} ".red.on_yellow.blink
             @cursor.toggle_selected
           else
             print "#{piece} ".colorize(:background => :yellow)
           end
-        elsif x % 2 == 0
-          if y % 2 == 0
+        elsif x.even?
+          if y.even?
             print "#{piece} ".colorize(:background => :white)
           else
             print "#{piece} ".colorize(:background => :blue)
           end
         else
-          if y % 2 ==0
+          if y.even?
             print "#{piece} ".colorize(:background => :blue)
           else
             print "#{piece} ".colorize(:background => :white)
@@ -48,6 +48,3 @@ class Display
   end
 
 end
-
-d = Display.new
-d.play
