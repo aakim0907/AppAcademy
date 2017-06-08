@@ -7,7 +7,7 @@ class Game
     @player1 = player1
     @player2 = player2
     @fragment = ''
-    @dictionary = File.readlines(dictionary.txt).map(&:strip)
+    @dictionary = File.readlines('dictionary.txt').map(&:strip)
     @current = @player1
     @loss_hash = { @player1 => 0, @player2 => 0 }
   end
@@ -19,14 +19,16 @@ class Game
         next_player!
       end
       puts "Congratulations! #{@current.name} won the round!"
-      track_score
+      next_player!
+      losses(@current)
+      puts "#{@current.name}: #{record(@current)}"
     end
     next_player!
-    puts "Congrats! #{@current.name} won the game!!!"
+    puts "Congrats to #{@current.name}!!! You won the game:)"
   end
 
   def game_over?
-    loss_hash.values.include?(5)
+    @loss_hash.values.include?(5)
   end
 
   def won_round?
@@ -64,18 +66,10 @@ class Game
     @loss_hash[player] += 1
   end
 
-  def track_score
-    next_player!
-    losses(@current)
-    puts record(@current)
-    @fragment = ''
-  end
-
   def record(player)
     score = @loss_hash[player]
     'GHOST'[0...score]
   end
-
 end
 
 if __FILE__ == $PROGRAM_NAME
