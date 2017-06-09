@@ -3,18 +3,19 @@ require_relative 'card.rb'
 class Board
   attr_reader :board
 
+  def self.generate_deck
+    cards = (1..8).to_a + (1..8).to_a
+    cards.shuffle!
+  end
+
   def initialize
     @grid = Array.new(4) { Array.new(4) { Card.new } }
-    @cards = (1..8).to_a + (1..8).to_a
+    @cards = Board.generate_deck
   end
 
   def [](pos)
     row, col = pos
     @grid[row][col]
-  end
-
-  def generate_deck
-    @cards.shuffle!
   end
 
   def populate_board
@@ -38,14 +39,13 @@ class Board
   end
 
   def won?
-    @grid.flatten.all? {|card| card.face_up}
+    @grid.flatten.all? { |card| card.face_up }
   end
 
 end
 
 if __FILE__ == $PROGRAM_NAME
   b = Board.new
-  b.generate_deck
   b.populate_board
   b.render
   b.flip_card([1, 1])

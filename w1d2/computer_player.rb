@@ -3,8 +3,8 @@ class ComputerPlayer
 
   def initialize(name)
     @name = name
-    @known_cards = Hash.new
-    @known_matches = Array.new
+    @known_cards = {}
+    @known_matches = []
     @all_positions = [0, 1, 2, 3].repeated_permutation(2)
   end
 
@@ -28,27 +28,26 @@ class ComputerPlayer
   private
 
   def second_guess(last_guess)
-    if @known_matches.length > 0
+    if @known_matches.empty?
+      random_pos
+    else
       match = @known_matches.select { |ele| ele.include?(last_guess) }
       unmatched_card = (match - last_guess).flatten
       unmatched_card
-    else
-      get_random_pos
     end
   end
 
   def first_guess
-    if @known_matches.length > 0
-      @known_matches[0][0]
+    if @known_matches.empty?
+      random_pos
     else
-      get_random_pos
+      @known_matches[0][0]
     end
   end
 
-  def get_random_pos
+  def random_pos
     known_positions = @known_cards.keys
     unknown_positions = @all_positions - known_positions
     unknown_positions.sample
   end
-
 end

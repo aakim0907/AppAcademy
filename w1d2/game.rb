@@ -5,7 +5,7 @@ require_relative 'computer_player.rb'
 
 class Game
   attr_reader :last_guess
-  
+
   def initialize(board, human_player, comp_player)
     @board = board
     @human_player = human_player
@@ -18,7 +18,6 @@ class Game
     @board.populate_board
     until @board.won?
       take_turn
-
     end
     # puts "You Win, #{@player.name}!!!!!"
   end
