@@ -7,35 +7,37 @@ class Game
     @player1 = player1
     @player2 = player2
     @fragment = ''
-    @dictionary = File.readlines('dictionary.txt').map(&:strip)
+    @dictionary = File.readlines('dictionary.txt').map(&:chomp)
     @current = @player1
     @loss_hash = { @player1 => 0, @player2 => 0 }
   end
 
   def play_game
-    until game_over?
-      until won_round?
-        take_turn(@current)
-        next_player!
-      end
-      puts "Congratulations! #{@current.name} won the round!"
-      next_player!
-      losses(@current)
-      puts "#{@current.name}: #{record(@current)}"
-    end
-    next_player!
+    play_round until game_over?
     puts "Congrats to #{@current.name}!!! You won the game:)"
   end
+
+  def play_round
+    @fragment = ''
+    until won_round?
+      take_turn(@current)
+      next_player!
+    end
+    puts "Congratulations! #{@current.name} won the round!"
+    next_player!
+    losses(@current)
+    puts "#{@player1.name}: #{record(@player1)}"
+    puts "#{@player2.name}: #{record(@player2)}"
+  end
+
+private
 
   def game_over?
     @loss_hash.values.include?(5)
   end
 
   def won_round?
-    @dictionary.each do |word|
-      return true if word == @fragment
-    end
-    false
+    @dictionary.include?(@fragment)
   end
 
   def next_player!
@@ -56,10 +58,7 @@ class Game
     return false unless ('a'..'z').to_a.include?(string)
     frag = @fragment
     frag += string
-    @dictionary.each do |word|
-      return true if word[0...frag.length] == frag
-    end
-    false
+    @dictionary.any? { |word| word[0...frag.length] == frag }
   end
 
   def losses(player)
