@@ -7,18 +7,14 @@ class Game
   attr_reader :last_guess
 
   def initialize(board, human_player, comp_player)
-    @board = board
+    @board = Board.new
     @human_player = human_player
     @comp_player = comp_player
     @last_guess = nil
   end
 
   def play_game
-    @board.generate_deck
-    @board.populate_board
-    until @board.won?
-      take_turn
-    end
+    take_turn until @board.won?
     # puts "You Win, #{@player.name}!!!!!"
   end
 

@@ -8,9 +8,18 @@ class Board
     cards.shuffle!
   end
 
+  def self.populate_board(cards)
+    grid = Array.new(4) { Array.new(4) { Card.new } }
+    grid.each do |row|
+      row.each do |card|
+        card.face_value = cards.pop
+      end
+    end
+  end
+
   def initialize
-    @grid = Array.new(4) { Array.new(4) { Card.new } }
     @cards = Board.generate_deck
+    @grid = Board.populate_board(@cards)
   end
 
   def [](pos)
@@ -18,17 +27,9 @@ class Board
     @grid[row][col]
   end
 
-  def populate_board
-    @grid.each do |row|
-      row.each do |card|
-        card.face_value = @cards.pop
-      end
-    end
-  end
-
   def render
     @grid.each do |row|
-      puts row.map(&:card_display).join(" ")
+      puts row.map(&:card_display).join(' ')
     end
   end
 
@@ -39,14 +40,13 @@ class Board
   end
 
   def won?
-    @grid.flatten.all? { |card| card.face_up }
+    @grid.flatten.all?(&:face_up) # { |card| card.face_up }
   end
 
 end
 
 if __FILE__ == $PROGRAM_NAME
   b = Board.new
-  b.populate_board
   b.render
   b.flip_card([1, 1])
   b.render
