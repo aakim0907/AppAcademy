@@ -1,5 +1,6 @@
 def first_anagram?(first, second)
-  first.chars.permutation(first.length).to_a.map{|x| x.join}.include?(second)
+  anagrams = first.chars.permutation(first.length).to_a
+  anagrams.map(&:join).include?(second)
 end
 
 def second_anagram?(first, second)
@@ -10,12 +11,9 @@ def second_anagram?(first, second)
   first.length.times do
     letter = first_arr.first
     second_index = second_arr.index(letter)
-    if second_index
-      second_arr.delete_at(second_index)
-      first_arr.shift
-    else
-      return false
-    end
+    return false unless second_index
+    second_arr.delete_at(second_index)
+    first_arr.shift
   end
   first_arr.empty? && second_arr.empty?
 end
