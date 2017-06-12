@@ -11,21 +11,6 @@ class Link
   def to_s
     "#{@key}: #{@val}"
   end
-
-  def remove
-    # prev_el = self.prev
-    # next_el = self.next
-    #
-    # prev_el.next = next_el
-    # next_el.prev = prev_el
-
-    #  x = nil
-    #
-    # @prev.next = @next
-    # @next.prev = @prev
-    # self.next = nil
-    # self.prev = nil
-  end
 end
 
 class LinkedList
@@ -96,7 +81,6 @@ class LinkedList
     end
   end
 
-  # uncomment when you have `each` working and `Enumerable` included
   def to_s
     inject([]) { |acc, link| acc << "[#{link.key}, #{link.val}]" }.join(", ")
   end

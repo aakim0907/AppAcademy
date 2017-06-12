@@ -26,7 +26,6 @@ class HashMap
     @store.each do |bucket|
       bucket.each do |link|
         yield link
-        p link
       end
     end
       # ele = bucket.head.next

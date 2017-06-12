@@ -1,5 +1,4 @@
 class MaxIntSet
-
   attr_reader :max
   attr_accessor :store
 
@@ -24,11 +23,8 @@ class MaxIntSet
   private
 
   def is_valid?(num)
-      num < max && num > 0
+    num < max && num > 0
   end
-  #
-  # def validate!(num)
-  # end
 end
 
 
@@ -39,7 +35,6 @@ class IntSet
 
   def insert(num)
     self[num].push(num)
-    # p @store
   end
 
   def remove(num)
@@ -85,10 +80,6 @@ class ResizingIntSet
     @store.any? { |arr| arr.include?(num) }
   end
 
-  def count
-    @count
-  end
-
   private
 
   def [](num)
@@ -107,6 +98,6 @@ class ResizingIntSet
 
     @store = a.store
     @count = 0
-    dup_store.each { |el| self.insert(el) }
+    dup_store.each { |el| insert(el) }
   end
 end

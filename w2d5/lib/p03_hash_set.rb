@@ -25,7 +25,6 @@ class HashSet
   private
 
   def [](num)
-    # optional but useful; return the bucket corresponding to `num`
     @store[num % num_buckets]
   end
 
@@ -41,6 +40,6 @@ class HashSet
 
     @store = a.store
     @count = 0
-    dup_store.each { |el| self.insert(el) }
+    dup_store.each { |el| insert(el) }
   end
 end
