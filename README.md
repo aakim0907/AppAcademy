@@ -12,10 +12,11 @@ Projects completed at AppAcademy
 * Match 2 Memory Puzzle
 
 ### [w1d3](https://github.com/aakim0907/AppAcademy/tree/master/w1d3)
+**Recursion**
 * Recursion
 
 ### [w1d4](https://github.com/aakim0907/AppAcademy/tree/master/w1d4)
-**Git**
+**Git, Git workflow**
 * Screwdoku
 
 ### [w1d5](https://github.com/aakim0907/AppAcademy/tree/master/w1d5)
@@ -69,6 +70,10 @@ Projects completed at AppAcademy
 * Active Record Lite
 
 ## Week 4
+### [w4d1](https://github.com/aakim0907/AppAcademy/tree/master/w4d1)
+**Rails Routing, RESTful Controller**
+* First Routes and Controllers
+* Art Share API
 
 ## Week 5
 
