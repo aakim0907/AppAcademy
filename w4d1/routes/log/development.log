@@ -1,0 +1,1281 @@
+Started GET "/" for 127.0.0.1 at 2017-06-19 13:56:31 -0700
+Processing by Rails::WelcomeController#index as HTML
+  Parameters: {"internal"=>true}
+  Rendering /Users/appacademy/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/railties-5.0.3/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/appacademy/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/railties-5.0.3/lib/rails/templates/rails/welcome/index.html.erb (5.0ms)
+Completed 200 OK in 65ms (Views: 32.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2017-06-19 14:09:37 -0700
+  
+AbstractController::ActionNotFound (The action 'index' could not be found for UsersController):
+  
+actionpack (5.0.3) lib/abstract_controller/base.rb:121:in `process'
+actionview (5.0.3) lib/action_view/rendering.rb:30:in `process'
+actionpack (5.0.3) lib/action_controller/metal.rb:190:in `dispatch'
+actionpack (5.0.3) lib/action_controller/metal.rb:262:in `dispatch'
+actionpack (5.0.3) lib/action_dispatch/routing/route_set.rb:50:in `dispatch'
+actionpack (5.0.3) lib/action_dispatch/routing/route_set.rb:32:in `serve'
+actionpack (5.0.3) lib/action_dispatch/journey/router.rb:39:in `block in serve'
+actionpack (5.0.3) lib/action_dispatch/journey/router.rb:26:in `each'
+actionpack (5.0.3) lib/action_dispatch/journey/router.rb:26:in `serve'
+actionpack (5.0.3) lib/action_dispatch/routing/route_set.rb:725:in `call'
+rack (2.0.3) lib/rack/etag.rb:25:in `call'
+rack (2.0.3) lib/rack/conditional_get.rb:25:in `call'
+rack (2.0.3) lib/rack/head.rb:12:in `call'
+rack (2.0.3) lib/rack/session/abstract/id.rb:232:in `context'
+rack (2.0.3) lib/rack/session/abstract/id.rb:226:in `call'
+actionpack (5.0.3) lib/action_dispatch/middleware/cookies.rb:613:in `call'
+activerecord (5.0.3) lib/active_record/migration.rb:553:in `call'
+actionpack (5.0.3) lib/action_dispatch/middleware/callbacks.rb:38:in `block in call'
+activesupport (5.0.3) lib/active_support/callbacks.rb:97:in `__run_callbacks__'
+activesupport (5.0.3) lib/active_support/callbacks.rb:750:in `_run_call_callbacks'
+activesupport (5.0.3) lib/active_support/callbacks.rb:90:in `run_callbacks'
+actionpack (5.0.3) lib/action_dispatch/middleware/callbacks.rb:36:in `call'
+actionpack (5.0.3) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.3) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.0.3) lib/action_dispatch/middleware/debug_exceptions.rb:49:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.0.3) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.3) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.3) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.3) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.0.3) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.3) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.0.3) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.0.3) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.3) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.3) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.3) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.0.3) lib/rails/engine.rb:522:in `call'
+puma (3.9.1) lib/puma/configuration.rb:224:in `call'
+puma (3.9.1) lib/puma/server.rb:602:in `handle_request'
+puma (3.9.1) lib/puma/server.rb:435:in `process_client'
+puma (3.9.1) lib/puma/server.rb:299:in `block in run'
+puma (3.9.1) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+  Rendering /Users/appacademy/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/unknown_action.html.erb within rescues/layout
+  Rendered /Users/appacademy/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/unknown_action.html.erb within rescues/layout (60.4ms)
+Started GET "/users" for 127.0.0.1 at 2017-06-19 14:11:58 -0700
+
+AbstractController::ActionNotFound - The action 'index' could not be found for UsersController:
+  actionpack (5.0.3) lib/abstract_controller/base.rb:121:in `process'
+  actionview (5.0.3) lib/action_view/rendering.rb:30:in `process'
+  actionpack (5.0.3) lib/action_controller/metal.rb:190:in `dispatch'
+  actionpack (5.0.3) lib/action_controller/metal.rb:262:in `dispatch'
+  actionpack (5.0.3) lib/action_dispatch/routing/route_set.rb:50:in `dispatch'
+  actionpack (5.0.3) lib/action_dispatch/routing/route_set.rb:32:in `serve'
+  actionpack (5.0.3) lib/action_dispatch/journey/router.rb:39:in `block in serve'
+  actionpack (5.0.3) lib/action_dispatch/journey/router.rb:26:in `serve'
+  actionpack (5.0.3) lib/action_dispatch/routing/route_set.rb:725:in `call'
+  rack (2.0.3) lib/rack/etag.rb:25:in `call'
+  rack (2.0.3) lib/rack/conditional_get.rb:25:in `call'
+  rack (2.0.3) lib/rack/head.rb:12:in `call'
+  rack (2.0.3) lib/rack/session/abstract/id.rb:232:in `context'
+  rack (2.0.3) lib/rack/session/abstract/id.rb:226:in `call'
+  actionpack (5.0.3) lib/action_dispatch/middleware/cookies.rb:613:in `call'
+  activerecord (5.0.3) lib/active_record/migration.rb:553:in `call'
+  actionpack (5.0.3) lib/action_dispatch/middleware/callbacks.rb:38:in `block in call'
+  activesupport (5.0.3) lib/active_support/callbacks.rb:97:in `__run_callbacks__'
+  activesupport (5.0.3) lib/active_support/callbacks.rb:750:in `_run_call_callbacks'
+  activesupport (5.0.3) lib/active_support/callbacks.rb:90:in `run_callbacks'
+  actionpack (5.0.3) lib/action_dispatch/middleware/callbacks.rb:36:in `call'
+  actionpack (5.0.3) lib/action_dispatch/middleware/executor.rb:12:in `call'
+  actionpack (5.0.3) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+  better_errors (2.1.1) lib/better_errors/middleware.rb:84:in `protected_app_call'
+  better_errors (2.1.1) lib/better_errors/middleware.rb:79:in `better_errors_call'
+  better_errors (2.1.1) lib/better_errors/middleware.rb:57:in `call'
+  actionpack (5.0.3) lib/action_dispatch/middleware/debug_exceptions.rb:49:in `call'
+  web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+  web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+  actionpack (5.0.3) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+  railties (5.0.3) lib/rails/rack/logger.rb:36:in `call_app'
+  railties (5.0.3) lib/rails/rack/logger.rb:24:in `block in call'
+  activesupport (5.0.3) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+  activesupport (5.0.3) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (5.0.3) lib/active_support/tagged_logging.rb:69:in `tagged'
+  railties (5.0.3) lib/rails/rack/logger.rb:24:in `call'
+  sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+  actionpack (5.0.3) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+  rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+  rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+  activesupport (5.0.3) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  actionpack (5.0.3) lib/action_dispatch/middleware/executor.rb:12:in `call'
+  actionpack (5.0.3) lib/action_dispatch/middleware/static.rb:136:in `call'
+  rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+  railties (5.0.3) lib/rails/engine.rb:522:in `call'
+  puma (3.9.1) lib/puma/configuration.rb:224:in `call'
+  puma (3.9.1) lib/puma/server.rb:602:in `handle_request'
+  puma (3.9.1) lib/puma/server.rb:435:in `process_client'
+  puma (3.9.1) lib/puma/server.rb:299:in `block in run'
+  puma (3.9.1) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+
+Started GET "/" for 127.0.0.1 at 2017-06-19 14:12:15 -0700
+Processing by Rails::WelcomeController#index as HTML
+  Parameters: {"internal"=>true}
+  Rendering /Users/appacademy/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/railties-5.0.3/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/appacademy/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/railties-5.0.3/lib/rails/templates/rails/welcome/index.html.erb (5.3ms)
+Completed 200 OK in 56ms (Views: 36.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2017-06-19 14:12:21 -0700
+
+AbstractController::ActionNotFound - The action 'index' could not be found for UsersController:
+  actionpack (5.0.3) lib/abstract_controller/base.rb:121:in `process'
+  actionview (5.0.3) lib/action_view/rendering.rb:30:in `process'
+  actionpack (5.0.3) lib/action_controller/metal.rb:190:in `dispatch'
+  actionpack (5.0.3) lib/action_controller/metal.rb:262:in `dispatch'
+  actionpack (5.0.3) lib/action_dispatch/routing/route_set.rb:50:in `dispatch'
+  actionpack (5.0.3) lib/action_dispatch/routing/route_set.rb:32:in `serve'
+  actionpack (5.0.3) lib/action_dispatch/journey/router.rb:39:in `block in serve'
+  actionpack (5.0.3) lib/action_dispatch/journey/router.rb:26:in `serve'
+  actionpack (5.0.3) lib/action_dispatch/routing/route_set.rb:725:in `call'
+  rack (2.0.3) lib/rack/etag.rb:25:in `call'
+  rack (2.0.3) lib/rack/conditional_get.rb:25:in `call'
+  rack (2.0.3) lib/rack/head.rb:12:in `call'
+  rack (2.0.3) lib/rack/session/abstract/id.rb:232:in `context'
+  rack (2.0.3) lib/rack/session/abstract/id.rb:226:in `call'
+  actionpack (5.0.3) lib/action_dispatch/middleware/cookies.rb:613:in `call'
+  activerecord (5.0.3) lib/active_record/migration.rb:553:in `call'
+  actionpack (5.0.3) lib/action_dispatch/middleware/callbacks.rb:38:in `block in call'
+  activesupport (5.0.3) lib/active_support/callbacks.rb:97:in `__run_callbacks__'
+  activesupport (5.0.3) lib/active_support/callbacks.rb:750:in `_run_call_callbacks'
+  activesupport (5.0.3) lib/active_support/callbacks.rb:90:in `run_callbacks'
+  actionpack (5.0.3) lib/action_dispatch/middleware/callbacks.rb:36:in `call'
+  actionpack (5.0.3) lib/action_dispatch/middleware/executor.rb:12:in `call'
+  actionpack (5.0.3) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+  better_errors (2.1.1) lib/better_errors/middleware.rb:84:in `protected_app_call'
+  better_errors (2.1.1) lib/better_errors/middleware.rb:79:in `better_errors_call'
+  better_errors (2.1.1) lib/better_errors/middleware.rb:57:in `call'
+  actionpack (5.0.3) lib/action_dispatch/middleware/debug_exceptions.rb:49:in `call'
+  web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+  web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+  actionpack (5.0.3) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+  railties (5.0.3) lib/rails/rack/logger.rb:36:in `call_app'
+  railties (5.0.3) lib/rails/rack/logger.rb:24:in `block in call'
+  activesupport (5.0.3) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+  activesupport (5.0.3) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (5.0.3) lib/active_support/tagged_logging.rb:69:in `tagged'
+  railties (5.0.3) lib/rails/rack/logger.rb:24:in `call'
+  sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+  actionpack (5.0.3) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+  rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+  rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+  activesupport (5.0.3) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  actionpack (5.0.3) lib/action_dispatch/middleware/executor.rb:12:in `call'
+  actionpack (5.0.3) lib/action_dispatch/middleware/static.rb:136:in `call'
+  rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+  railties (5.0.3) lib/rails/engine.rb:522:in `call'
+  puma (3.9.1) lib/puma/configuration.rb:224:in `call'
+  puma (3.9.1) lib/puma/server.rb:602:in `handle_request'
+  puma (3.9.1) lib/puma/server.rb:435:in `process_client'
+  puma (3.9.1) lib/puma/server.rb:299:in `block in run'
+  puma (3.9.1) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+
+Started POST "/__better_errors/bbf4743174314e61/variables" for 127.0.0.1 at 2017-06-19 14:12:21 -0700
+Started GET "/users" for 127.0.0.1 at 2017-06-19 14:15:29 -0700
+Processing by UsersController#index as */*
+No template found for UsersController#index, rendering head :no_content
+Completed 204 No Content in 67ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2017-06-19 14:16:25 -0700
+Processing by UsersController#index as */*
+DEPRECATION WARNING: `render :text` is deprecated because it does not actually render a `text/plain` response. Switch to `render plain: 'plain text'` to render as `text/plain`, `render html: '<strong>HTML</strong>'` to render as `text/html`, or `render body: 'raw'` to match the deprecated behavior and render with the default Content-Type, which is `text/html`. (called from index at /Users/appacademy/Desktop/w4d1/routes/app/controllers/users_controller.rb:3)
+  Rendering text template
+  Rendered text template (0.0ms)
+Completed 200 OK in 284ms (Views: 283.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users?fav_food=pizza&admin=true" for 127.0.0.1 at 2017-06-19 14:21:11 -0700
+Processing by UsersController#index as */*
+  Parameters: {"fav_food"=>"pizza", "admin"=>"true"}
+DEPRECATION WARNING: `render :text` is deprecated because it does not actually render a `text/plain` response. Switch to `render plain: 'plain text'` to render as `text/plain`, `render html: '<strong>HTML</strong>'` to render as `text/html`, or `render body: 'raw'` to match the deprecated behavior and render with the default Content-Type, which is `text/html`. (called from index at /Users/appacademy/Desktop/w4d1/routes/app/controllers/users_controller.rb:3)
+  Rendering text template
+  Rendered text template (0.0ms)
+Completed 200 OK in 1ms (Views: 0.5ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2017-06-19 14:23:11 -0700
+
+AbstractController::ActionNotFound - The action 'create' could not be found for UsersController:
+  actionpack (5.0.3) lib/abstract_controller/base.rb:121:in `process'
+  actionview (5.0.3) lib/action_view/rendering.rb:30:in `process'
+  actionpack (5.0.3) lib/action_controller/metal.rb:190:in `dispatch'
+  actionpack (5.0.3) lib/action_controller/metal.rb:262:in `dispatch'
+  actionpack (5.0.3) lib/action_dispatch/routing/route_set.rb:50:in `dispatch'
+  actionpack (5.0.3) lib/action_dispatch/routing/route_set.rb:32:in `serve'
+  actionpack (5.0.3) lib/action_dispatch/journey/router.rb:39:in `block in serve'
+  actionpack (5.0.3) lib/action_dispatch/journey/router.rb:26:in `serve'
+  actionpack (5.0.3) lib/action_dispatch/routing/route_set.rb:725:in `call'
+  rack (2.0.3) lib/rack/etag.rb:25:in `call'
+  rack (2.0.3) lib/rack/conditional_get.rb:38:in `call'
+  rack (2.0.3) lib/rack/head.rb:12:in `call'
+  rack (2.0.3) lib/rack/session/abstract/id.rb:232:in `context'
+  rack (2.0.3) lib/rack/session/abstract/id.rb:226:in `call'
+  actionpack (5.0.3) lib/action_dispatch/middleware/cookies.rb:613:in `call'
+  activerecord (5.0.3) lib/active_record/migration.rb:553:in `call'
+  actionpack (5.0.3) lib/action_dispatch/middleware/callbacks.rb:38:in `block in call'
+  activesupport (5.0.3) lib/active_support/callbacks.rb:97:in `__run_callbacks__'
+  activesupport (5.0.3) lib/active_support/callbacks.rb:750:in `_run_call_callbacks'
+  activesupport (5.0.3) lib/active_support/callbacks.rb:90:in `run_callbacks'
+  actionpack (5.0.3) lib/action_dispatch/middleware/callbacks.rb:36:in `call'
+  actionpack (5.0.3) lib/action_dispatch/middleware/executor.rb:12:in `call'
+  actionpack (5.0.3) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+  better_errors (2.1.1) lib/better_errors/middleware.rb:84:in `protected_app_call'
+  better_errors (2.1.1) lib/better_errors/middleware.rb:79:in `better_errors_call'
+  better_errors (2.1.1) lib/better_errors/middleware.rb:57:in `call'
+  actionpack (5.0.3) lib/action_dispatch/middleware/debug_exceptions.rb:49:in `call'
+  web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+  web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+  actionpack (5.0.3) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+  railties (5.0.3) lib/rails/rack/logger.rb:36:in `call_app'
+  railties (5.0.3) lib/rails/rack/logger.rb:24:in `block in call'
+  activesupport (5.0.3) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+  activesupport (5.0.3) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (5.0.3) lib/active_support/tagged_logging.rb:69:in `tagged'
+  railties (5.0.3) lib/rails/rack/logger.rb:24:in `call'
+  sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+  actionpack (5.0.3) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+  rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+  rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+  activesupport (5.0.3) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  actionpack (5.0.3) lib/action_dispatch/middleware/executor.rb:12:in `call'
+  actionpack (5.0.3) lib/action_dispatch/middleware/static.rb:136:in `call'
+  rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+  railties (5.0.3) lib/rails/engine.rb:522:in `call'
+  puma (3.9.1) lib/puma/configuration.rb:224:in `call'
+  puma (3.9.1) lib/puma/server.rb:602:in `handle_request'
+  puma (3.9.1) lib/puma/server.rb:435:in `process_client'
+  puma (3.9.1) lib/puma/server.rb:299:in `block in run'
+  puma (3.9.1) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+
+Started POST "/users" for 127.0.0.1 at 2017-06-19 14:24:27 -0700
+
+AbstractController::ActionNotFound - The action 'create' could not be found for UsersController:
+  actionpack (5.0.3) lib/abstract_controller/base.rb:121:in `process'
+  actionview (5.0.3) lib/action_view/rendering.rb:30:in `process'
+  actionpack (5.0.3) lib/action_controller/metal.rb:190:in `dispatch'
+  actionpack (5.0.3) lib/action_controller/metal.rb:262:in `dispatch'
+  actionpack (5.0.3) lib/action_dispatch/routing/route_set.rb:50:in `dispatch'
+  actionpack (5.0.3) lib/action_dispatch/routing/route_set.rb:32:in `serve'
+  actionpack (5.0.3) lib/action_dispatch/journey/router.rb:39:in `block in serve'
+  actionpack (5.0.3) lib/action_dispatch/journey/router.rb:26:in `serve'
+  actionpack (5.0.3) lib/action_dispatch/routing/route_set.rb:725:in `call'
+  rack (2.0.3) lib/rack/etag.rb:25:in `call'
+  rack (2.0.3) lib/rack/conditional_get.rb:38:in `call'
+  rack (2.0.3) lib/rack/head.rb:12:in `call'
+  rack (2.0.3) lib/rack/session/abstract/id.rb:232:in `context'
+  rack (2.0.3) lib/rack/session/abstract/id.rb:226:in `call'
+  actionpack (5.0.3) lib/action_dispatch/middleware/cookies.rb:613:in `call'
+  activerecord (5.0.3) lib/active_record/migration.rb:553:in `call'
+  actionpack (5.0.3) lib/action_dispatch/middleware/callbacks.rb:38:in `block in call'
+  activesupport (5.0.3) lib/active_support/callbacks.rb:97:in `__run_callbacks__'
+  activesupport (5.0.3) lib/active_support/callbacks.rb:750:in `_run_call_callbacks'
+  activesupport (5.0.3) lib/active_support/callbacks.rb:90:in `run_callbacks'
+  actionpack (5.0.3) lib/action_dispatch/middleware/callbacks.rb:36:in `call'
+  actionpack (5.0.3) lib/action_dispatch/middleware/executor.rb:12:in `call'
+  actionpack (5.0.3) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+  better_errors (2.1.1) lib/better_errors/middleware.rb:84:in `protected_app_call'
+  better_errors (2.1.1) lib/better_errors/middleware.rb:79:in `better_errors_call'
+  better_errors (2.1.1) lib/better_errors/middleware.rb:57:in `call'
+  actionpack (5.0.3) lib/action_dispatch/middleware/debug_exceptions.rb:49:in `call'
+  web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+  web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+  actionpack (5.0.3) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+  railties (5.0.3) lib/rails/rack/logger.rb:36:in `call_app'
+  railties (5.0.3) lib/rails/rack/logger.rb:24:in `block in call'
+  activesupport (5.0.3) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+  activesupport (5.0.3) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (5.0.3) lib/active_support/tagged_logging.rb:69:in `tagged'
+  railties (5.0.3) lib/rails/rack/logger.rb:24:in `call'
+  sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+  actionpack (5.0.3) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+  rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+  rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+  activesupport (5.0.3) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  actionpack (5.0.3) lib/action_dispatch/middleware/executor.rb:12:in `call'
+  actionpack (5.0.3) lib/action_dispatch/middleware/static.rb:136:in `call'
+  rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+  railties (5.0.3) lib/rails/engine.rb:522:in `call'
+  puma (3.9.1) lib/puma/configuration.rb:224:in `call'
+  puma (3.9.1) lib/puma/server.rb:602:in `handle_request'
+  puma (3.9.1) lib/puma/server.rb:435:in `process_client'
+  puma (3.9.1) lib/puma/server.rb:299:in `block in run'
+  puma (3.9.1) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+
+Started POST "/users" for 127.0.0.1 at 2017-06-19 14:27:18 -0700
+Processing by UsersController#create as */*
+  Parameters: {"fav_food"=>"pizza", "admin"=>"true"}
+Completed 200 OK in 0ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/2" for 127.0.0.1 at 2017-06-19 14:34:19 -0700
+
+AbstractController::ActionNotFound - The action 'show' could not be found for UsersController:
+  actionpack (5.0.3) lib/abstract_controller/base.rb:121:in `process'
+  actionview (5.0.3) lib/action_view/rendering.rb:30:in `process'
+  actionpack (5.0.3) lib/action_controller/metal.rb:190:in `dispatch'
+  actionpack (5.0.3) lib/action_controller/metal.rb:262:in `dispatch'
+  actionpack (5.0.3) lib/action_dispatch/routing/route_set.rb:50:in `dispatch'
+  actionpack (5.0.3) lib/action_dispatch/routing/route_set.rb:32:in `serve'
+  actionpack (5.0.3) lib/action_dispatch/journey/router.rb:39:in `block in serve'
+  actionpack (5.0.3) lib/action_dispatch/journey/router.rb:26:in `serve'
+  actionpack (5.0.3) lib/action_dispatch/routing/route_set.rb:725:in `call'
+  rack (2.0.3) lib/rack/etag.rb:25:in `call'
+  rack (2.0.3) lib/rack/conditional_get.rb:25:in `call'
+  rack (2.0.3) lib/rack/head.rb:12:in `call'
+  rack (2.0.3) lib/rack/session/abstract/id.rb:232:in `context'
+  rack (2.0.3) lib/rack/session/abstract/id.rb:226:in `call'
+  actionpack (5.0.3) lib/action_dispatch/middleware/cookies.rb:613:in `call'
+  activerecord (5.0.3) lib/active_record/migration.rb:553:in `call'
+  actionpack (5.0.3) lib/action_dispatch/middleware/callbacks.rb:38:in `block in call'
+  activesupport (5.0.3) lib/active_support/callbacks.rb:97:in `__run_callbacks__'
+  activesupport (5.0.3) lib/active_support/callbacks.rb:750:in `_run_call_callbacks'
+  activesupport (5.0.3) lib/active_support/callbacks.rb:90:in `run_callbacks'
+  actionpack (5.0.3) lib/action_dispatch/middleware/callbacks.rb:36:in `call'
+  actionpack (5.0.3) lib/action_dispatch/middleware/executor.rb:12:in `call'
+  actionpack (5.0.3) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+  better_errors (2.1.1) lib/better_errors/middleware.rb:84:in `protected_app_call'
+  better_errors (2.1.1) lib/better_errors/middleware.rb:79:in `better_errors_call'
+  better_errors (2.1.1) lib/better_errors/middleware.rb:57:in `call'
+  actionpack (5.0.3) lib/action_dispatch/middleware/debug_exceptions.rb:49:in `call'
+  web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+  web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+  actionpack (5.0.3) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+  railties (5.0.3) lib/rails/rack/logger.rb:36:in `call_app'
+  railties (5.0.3) lib/rails/rack/logger.rb:24:in `block in call'
+  activesupport (5.0.3) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+  activesupport (5.0.3) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (5.0.3) lib/active_support/tagged_logging.rb:69:in `tagged'
+  railties (5.0.3) lib/rails/rack/logger.rb:24:in `call'
+  sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+  actionpack (5.0.3) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+  rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+  rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+  activesupport (5.0.3) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  actionpack (5.0.3) lib/action_dispatch/middleware/executor.rb:12:in `call'
+  actionpack (5.0.3) lib/action_dispatch/middleware/static.rb:136:in `call'
+  rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+  railties (5.0.3) lib/rails/engine.rb:522:in `call'
+  puma (3.9.1) lib/puma/configuration.rb:224:in `call'
+  puma (3.9.1) lib/puma/server.rb:602:in `handle_request'
+  puma (3.9.1) lib/puma/server.rb:435:in `process_client'
+  puma (3.9.1) lib/puma/server.rb:299:in `block in run'
+  puma (3.9.1) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+
+Started GET "/users/2" for 127.0.0.1 at 2017-06-19 14:34:40 -0700
+Processing by UsersController#show as */*
+  Parameters: {"id"=>"2"}
+Completed 200 OK in 1ms (Views: 0.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users?fav_food=pizza&admin=true" for 127.0.0.1 at 2017-06-19 14:36:38 -0700
+Processing by UsersController#index as */*
+  Parameters: {"fav_food"=>"pizza", "admin"=>"true"}
+Completed 200 OK in 0ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2017-06-19 14:45:59 -0700
+Processing by UsersController#create as */*
+  Parameters: {"{\n  'id' "=>"> 5,\n  'some_category' => {\n    'a_key' => 'another value',\n    'a_second_key' => 'yet another value',\n    'inner_inner_hash' => {\n      'key' => 'value'\n    }\n  },\n  'something_else' => 'aaahhhhh'\n}"}
+Completed 200 OK in 0ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2017-06-19 14:46:52 -0700
+Processing by UsersController#create as */*
+  Parameters: {"food"=>{"fast_food"=>"pizza", "dessert"=>"ice_cream"}}
+Completed 200 OK in 0ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users?some_category[a_key]=another+key&some_category[a_second_key]=yet+another_value" for 127.0.0.1 at 2017-06-19 14:47:31 -0700
+Processing by UsersController#create as */*
+  Parameters: {"some_category"=>{"a_key"=>"another key", "a_second_key"=>"yet another_value"}}
+Completed 200 OK in 0ms (Views: 0.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users?some_category[a_key]=another+key&some_category[a_second_key]=yet+another_value" for 127.0.0.1 at 2017-06-19 14:47:58 -0700
+Processing by UsersController#create as */*
+  Parameters: {"some_category"=>{"a_key"=>"another key", "a_second_key"=>"yet another_value"}}
+Completed 200 OK in 0ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2017-06-19 14:48:05 -0700
+Processing by UsersController#create as */*
+  Parameters: {"some_category"=>{"a_key"=>{" "=>"> 'another value'\nsome_category[a_second_key] => 'yet another value'\nsome_category[inner_inner_hash][key] => 'value'\nsomething_else => 'aaahhhhh'"}}}
+Completed 200 OK in 0ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users?some_category[a_key]=another+key&some_category[a_second_key]=yet+another_value" for 127.0.0.1 at 2017-06-19 14:49:14 -0700
+Processing by UsersController#index as */*
+  Parameters: {"some_category"=>{"a_key"=>"another key", "a_second_key"=>"yet another_value"}}
+DEPRECATION WARNING: `render :text` is deprecated because it does not actually render a `text/plain` response. Switch to `render plain: 'plain text'` to render as `text/plain`, `render html: '<strong>HTML</strong>'` to render as `text/html`, or `render body: 'raw'` to match the deprecated behavior and render with the default Content-Type, which is `text/html`. (called from index at /Users/appacademy/Desktop/w4d1/routes/app/controllers/users_controller.rb:3)
+  Rendering text template
+  Rendered text template (0.0ms)
+Completed 200 OK in 1ms (Views: 1.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users?some_category[a_key]=another+key&some_category[a_second_key]=yet+another_value" for 127.0.0.1 at 2017-06-19 14:49:23 -0700
+Processing by UsersController#index as */*
+  Parameters: {"some_category"=>{"a_key"=>"another key", "a_second_key"=>"yet another_value"}}
+Completed 200 OK in 1ms (Views: 0.3ms | ActiveRecord: 0.0ms)
+
+
+  [1m[35m (1.8ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL PRIMARY KEY)[0m
+  [1m[35m (1.3ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" varchar NOT NULL PRIMARY KEY, "value" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to CreateUsers (20170619215153)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.5ms)[0m  [1m[35mCREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar NOT NULL, "email" varchar NOT NULL)[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20170619215153"]]
+  [1m[35m (1.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.4ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "environment"], ["value", "development"], ["created_at", "2017-06-19 21:56:58.690901"], ["updated_at", "2017-06-19 21:56:58.690901"]]
+  [1m[35m (7.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Started GET "/users" for 127.0.0.1 at 2017-06-19 14:59:54 -0700
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by UsersController#index as */*
+  [1m[36mUser Load (5.8ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+Completed 200 OK in 21ms (Views: 1.3ms | ActiveRecord: 6.1ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2017-06-19 15:00:59 -0700
+Processing by UsersController#index as */*
+  [1m[36mUser Load (6.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+Completed 200 OK in 7ms (Views: 0.7ms | ActiveRecord: 6.2ms)
+
+
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Exists (26.8ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "g@app"], ["LIMIT", 1]]
+  [1m[35mSQL (0.9ms)[0m  [1m[32mINSERT INTO "users" ("name", "email") VALUES (?, ?)[0m  [["name", "George"], ["email", "g@app"]]
+  [1m[35m (1.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "y@app"], ["LIMIT", 1]]
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "users" ("name", "email") VALUES (?, ?)[0m  [["name", "Young"], ["email", "y@app"]]
+  [1m[35m (1.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mUser Load (6.1ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+Started GET "/users" for 127.0.0.1 at 2017-06-19 15:03:27 -0700
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by UsersController#index as */*
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+Completed 200 OK in 22ms (Views: 3.8ms | ActiveRecord: 0.9ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2017-06-19 15:13:52 -0700
+Processing by UsersController#create as */*
+  Parameters: {"user"=>{"name"=>"David", "email"=>"d@app"}}
+Completed 500 Internal Server Error in 6ms (ActiveRecord: 0.0ms)
+
+
+
+ArgumentError - wrong number of arguments (given 0, expected 1):
+  actionpack (5.0.3) lib/action_controller/metal/strong_parameters.rb:449:in `require'
+  app/controllers/users_controller.rb:22:in `user_params'
+  app/controllers/users_controller.rb:8:in `create'
+  actionpack (5.0.3) lib/action_controller/metal/basic_implicit_render.rb:4:in `send_action'
+  actionpack (5.0.3) lib/abstract_controller/base.rb:188:in `process_action'
+  actionpack (5.0.3) lib/action_controller/metal/rendering.rb:30:in `process_action'
+  actionpack (5.0.3) lib/abstract_controller/callbacks.rb:20:in `block in process_action'
+  activesupport (5.0.3) lib/active_support/callbacks.rb:97:in `__run_callbacks__'
+  activesupport (5.0.3) lib/active_support/callbacks.rb:750:in `_run_process_action_callbacks'
+  activesupport (5.0.3) lib/active_support/callbacks.rb:90:in `run_callbacks'
+  actionpack (5.0.3) lib/abstract_controller/callbacks.rb:19:in `process_action'
+  actionpack (5.0.3) lib/action_controller/metal/rescue.rb:20:in `process_action'
+  actionpack (5.0.3) lib/action_controller/metal/instrumentation.rb:32:in `block in process_action'
+  activesupport (5.0.3) lib/active_support/notifications.rb:164:in `block in instrument'
+  activesupport (5.0.3) lib/active_support/notifications/instrumenter.rb:21:in `instrument'
+  activesupport (5.0.3) lib/active_support/notifications.rb:164:in `instrument'
+  actionpack (5.0.3) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+  actionpack (5.0.3) lib/action_controller/metal/params_wrapper.rb:248:in `process_action'
+  activerecord (5.0.3) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (5.0.3) lib/abstract_controller/base.rb:126:in `process'
+  actionview (5.0.3) lib/action_view/rendering.rb:30:in `process'
+  actionpack (5.0.3) lib/action_controller/metal.rb:190:in `dispatch'
+  actionpack (5.0.3) lib/action_controller/metal.rb:262:in `dispatch'
+  actionpack (5.0.3) lib/action_dispatch/routing/route_set.rb:50:in `dispatch'
+  actionpack (5.0.3) lib/action_dispatch/routing/route_set.rb:32:in `serve'
+  actionpack (5.0.3) lib/action_dispatch/journey/router.rb:39:in `block in serve'
+  actionpack (5.0.3) lib/action_dispatch/journey/router.rb:26:in `each'
+  actionpack (5.0.3) lib/action_dispatch/journey/router.rb:26:in `serve'
+  actionpack (5.0.3) lib/action_dispatch/routing/route_set.rb:725:in `call'
+  rack (2.0.3) lib/rack/etag.rb:25:in `call'
+  rack (2.0.3) lib/rack/conditional_get.rb:38:in `call'
+  rack (2.0.3) lib/rack/head.rb:12:in `call'
+  rack (2.0.3) lib/rack/session/abstract/id.rb:232:in `context'
+  rack (2.0.3) lib/rack/session/abstract/id.rb:226:in `call'
+  actionpack (5.0.3) lib/action_dispatch/middleware/cookies.rb:613:in `call'
+  activerecord (5.0.3) lib/active_record/migration.rb:553:in `call'
+  actionpack (5.0.3) lib/action_dispatch/middleware/callbacks.rb:38:in `block in call'
+  activesupport (5.0.3) lib/active_support/callbacks.rb:97:in `__run_callbacks__'
+  activesupport (5.0.3) lib/active_support/callbacks.rb:750:in `_run_call_callbacks'
+  activesupport (5.0.3) lib/active_support/callbacks.rb:90:in `run_callbacks'
+  actionpack (5.0.3) lib/action_dispatch/middleware/callbacks.rb:36:in `call'
+  actionpack (5.0.3) lib/action_dispatch/middleware/executor.rb:12:in `call'
+  actionpack (5.0.3) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+  better_errors (2.1.1) lib/better_errors/middleware.rb:84:in `protected_app_call'
+  better_errors (2.1.1) lib/better_errors/middleware.rb:79:in `better_errors_call'
+  better_errors (2.1.1) lib/better_errors/middleware.rb:57:in `call'
+  actionpack (5.0.3) lib/action_dispatch/middleware/debug_exceptions.rb:49:in `call'
+  web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+  web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+  web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+  actionpack (5.0.3) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+  railties (5.0.3) lib/rails/rack/logger.rb:36:in `call_app'
+  railties (5.0.3) lib/rails/rack/logger.rb:24:in `block in call'
+  activesupport (5.0.3) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+  activesupport (5.0.3) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (5.0.3) lib/active_support/tagged_logging.rb:69:in `tagged'
+  railties (5.0.3) lib/rails/rack/logger.rb:24:in `call'
+  sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+  actionpack (5.0.3) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+  rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+  rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+  activesupport (5.0.3) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  actionpack (5.0.3) lib/action_dispatch/middleware/executor.rb:12:in `call'
+  actionpack (5.0.3) lib/action_dispatch/middleware/static.rb:136:in `call'
+  rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+  railties (5.0.3) lib/rails/engine.rb:522:in `call'
+  puma (3.9.1) lib/puma/configuration.rb:224:in `call'
+  puma (3.9.1) lib/puma/server.rb:602:in `handle_request'
+  puma (3.9.1) lib/puma/server.rb:435:in `process_client'
+  puma (3.9.1) lib/puma/server.rb:299:in `block in run'
+  puma (3.9.1) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+
+Started POST "/users" for 127.0.0.1 at 2017-06-19 15:16:11 -0700
+Processing by UsersController#create as */*
+  Parameters: {"user"=>{"name"=>"David", "email"=>"d@app"}}
+Completed 500 Internal Server Error in 0ms (ActiveRecord: 0.0ms)
+
+
+
+ArgumentError - wrong number of arguments (given 0, expected 1):
+  actionpack (5.0.3) lib/action_controller/metal/strong_parameters.rb:449:in `require'
+  app/controllers/users_controller.rb:22:in `user_params'
+  app/controllers/users_controller.rb:8:in `create'
+  actionpack (5.0.3) lib/action_controller/metal/basic_implicit_render.rb:4:in `send_action'
+  actionpack (5.0.3) lib/abstract_controller/base.rb:188:in `process_action'
+  actionpack (5.0.3) lib/action_controller/metal/rendering.rb:30:in `process_action'
+  actionpack (5.0.3) lib/abstract_controller/callbacks.rb:20:in `block in process_action'
+  activesupport (5.0.3) lib/active_support/callbacks.rb:97:in `__run_callbacks__'
+  activesupport (5.0.3) lib/active_support/callbacks.rb:750:in `_run_process_action_callbacks'
+  activesupport (5.0.3) lib/active_support/callbacks.rb:90:in `run_callbacks'
+  actionpack (5.0.3) lib/abstract_controller/callbacks.rb:19:in `process_action'
+  actionpack (5.0.3) lib/action_controller/metal/rescue.rb:20:in `process_action'
+  actionpack (5.0.3) lib/action_controller/metal/instrumentation.rb:32:in `block in process_action'
+  activesupport (5.0.3) lib/active_support/notifications.rb:164:in `block in instrument'
+  activesupport (5.0.3) lib/active_support/notifications/instrumenter.rb:21:in `instrument'
+  activesupport (5.0.3) lib/active_support/notifications.rb:164:in `instrument'
+  actionpack (5.0.3) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+  actionpack (5.0.3) lib/action_controller/metal/params_wrapper.rb:248:in `process_action'
+  activerecord (5.0.3) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (5.0.3) lib/abstract_controller/base.rb:126:in `process'
+  actionview (5.0.3) lib/action_view/rendering.rb:30:in `process'
+  actionpack (5.0.3) lib/action_controller/metal.rb:190:in `dispatch'
+  actionpack (5.0.3) lib/action_controller/metal.rb:262:in `dispatch'
+  actionpack (5.0.3) lib/action_dispatch/routing/route_set.rb:50:in `dispatch'
+  actionpack (5.0.3) lib/action_dispatch/routing/route_set.rb:32:in `serve'
+  actionpack (5.0.3) lib/action_dispatch/journey/router.rb:39:in `block in serve'
+  actionpack (5.0.3) lib/action_dispatch/journey/router.rb:26:in `each'
+  actionpack (5.0.3) lib/action_dispatch/journey/router.rb:26:in `serve'
+  actionpack (5.0.3) lib/action_dispatch/routing/route_set.rb:725:in `call'
+  rack (2.0.3) lib/rack/etag.rb:25:in `call'
+  rack (2.0.3) lib/rack/conditional_get.rb:38:in `call'
+  rack (2.0.3) lib/rack/head.rb:12:in `call'
+  rack (2.0.3) lib/rack/session/abstract/id.rb:232:in `context'
+  rack (2.0.3) lib/rack/session/abstract/id.rb:226:in `call'
+  actionpack (5.0.3) lib/action_dispatch/middleware/cookies.rb:613:in `call'
+  activerecord (5.0.3) lib/active_record/migration.rb:553:in `call'
+  actionpack (5.0.3) lib/action_dispatch/middleware/callbacks.rb:38:in `block in call'
+  activesupport (5.0.3) lib/active_support/callbacks.rb:97:in `__run_callbacks__'
+  activesupport (5.0.3) lib/active_support/callbacks.rb:750:in `_run_call_callbacks'
+  activesupport (5.0.3) lib/active_support/callbacks.rb:90:in `run_callbacks'
+  actionpack (5.0.3) lib/action_dispatch/middleware/callbacks.rb:36:in `call'
+  actionpack (5.0.3) lib/action_dispatch/middleware/executor.rb:12:in `call'
+  actionpack (5.0.3) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+  better_errors (2.1.1) lib/better_errors/middleware.rb:84:in `protected_app_call'
+  better_errors (2.1.1) lib/better_errors/middleware.rb:79:in `better_errors_call'
+  better_errors (2.1.1) lib/better_errors/middleware.rb:57:in `call'
+  actionpack (5.0.3) lib/action_dispatch/middleware/debug_exceptions.rb:49:in `call'
+  web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+  web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+  web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+  actionpack (5.0.3) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+  railties (5.0.3) lib/rails/rack/logger.rb:36:in `call_app'
+  railties (5.0.3) lib/rails/rack/logger.rb:24:in `block in call'
+  activesupport (5.0.3) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+  activesupport (5.0.3) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (5.0.3) lib/active_support/tagged_logging.rb:69:in `tagged'
+  railties (5.0.3) lib/rails/rack/logger.rb:24:in `call'
+  sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+  actionpack (5.0.3) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+  rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+  rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+  activesupport (5.0.3) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  actionpack (5.0.3) lib/action_dispatch/middleware/executor.rb:12:in `call'
+  actionpack (5.0.3) lib/action_dispatch/middleware/static.rb:136:in `call'
+  rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+  railties (5.0.3) lib/rails/engine.rb:522:in `call'
+  puma (3.9.1) lib/puma/configuration.rb:224:in `call'
+  puma (3.9.1) lib/puma/server.rb:602:in `handle_request'
+  puma (3.9.1) lib/puma/server.rb:435:in `process_client'
+  puma (3.9.1) lib/puma/server.rb:299:in `block in run'
+  puma (3.9.1) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+
+Started POST "/users" for 127.0.0.1 at 2017-06-19 15:16:45 -0700
+Processing by UsersController#create as */*
+  Parameters: {"user"=>{"name"=>"David", "email"=>"d@app"}}
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Exists (18.6ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "d@app"], ["LIMIT", 1]]
+  [1m[35mSQL (7.9ms)[0m  [1m[32mINSERT INTO "users" ("name", "email") VALUES (?, ?)[0m  [["name", "David"], ["email", "d@app"]]
+  [1m[35m (7.1ms)[0m  [1m[36mcommit transaction[0m
+Completed 200 OK in 74ms (Views: 0.5ms | ActiveRecord: 34.3ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2017-06-19 15:17:27 -0700
+Processing by UsersController#create as */*
+  Parameters: {"user"=>{"name"=>"Luke", "email"=>"l@app"}}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "l@app"], ["LIMIT", 1]]
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "users" ("name", "email") VALUES (?, ?)[0m  [["name", "Luke"], ["email", "l@app"]]
+  [1m[35m (1.7ms)[0m  [1m[36mcommit transaction[0m
+Completed 200 OK in 6ms (Views: 0.4ms | ActiveRecord: 2.3ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2017-06-19 15:17:30 -0700
+Processing by UsersController#create as */*
+  Parameters: {"user"=>{"name"=>"Luke", "email"=>"l@app"}}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "l@app"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+Completed 500 Internal Server Error in 77ms (ActiveRecord: 0.3ms)
+
+
+
+ArgumentError - wrong number of arguments (given 0, expected 2):
+  activemodel (5.0.3) lib/active_model/errors.rb:438:in `full_message'
+  app/controllers/users_controller.rb:12:in `create'
+  actionpack (5.0.3) lib/action_controller/metal/basic_implicit_render.rb:4:in `send_action'
+  actionpack (5.0.3) lib/abstract_controller/base.rb:188:in `process_action'
+  actionpack (5.0.3) lib/action_controller/metal/rendering.rb:30:in `process_action'
+  actionpack (5.0.3) lib/abstract_controller/callbacks.rb:20:in `block in process_action'
+  activesupport (5.0.3) lib/active_support/callbacks.rb:97:in `__run_callbacks__'
+  activesupport (5.0.3) lib/active_support/callbacks.rb:750:in `_run_process_action_callbacks'
+  activesupport (5.0.3) lib/active_support/callbacks.rb:90:in `run_callbacks'
+  actionpack (5.0.3) lib/abstract_controller/callbacks.rb:19:in `process_action'
+  actionpack (5.0.3) lib/action_controller/metal/rescue.rb:20:in `process_action'
+  actionpack (5.0.3) lib/action_controller/metal/instrumentation.rb:32:in `block in process_action'
+  activesupport (5.0.3) lib/active_support/notifications.rb:164:in `block in instrument'
+  activesupport (5.0.3) lib/active_support/notifications/instrumenter.rb:21:in `instrument'
+  activesupport (5.0.3) lib/active_support/notifications.rb:164:in `instrument'
+  actionpack (5.0.3) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+  actionpack (5.0.3) lib/action_controller/metal/params_wrapper.rb:248:in `process_action'
+  activerecord (5.0.3) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (5.0.3) lib/abstract_controller/base.rb:126:in `process'
+  actionview (5.0.3) lib/action_view/rendering.rb:30:in `process'
+  actionpack (5.0.3) lib/action_controller/metal.rb:190:in `dispatch'
+  actionpack (5.0.3) lib/action_controller/metal.rb:262:in `dispatch'
+  actionpack (5.0.3) lib/action_dispatch/routing/route_set.rb:50:in `dispatch'
+  actionpack (5.0.3) lib/action_dispatch/routing/route_set.rb:32:in `serve'
+  actionpack (5.0.3) lib/action_dispatch/journey/router.rb:39:in `block in serve'
+  actionpack (5.0.3) lib/action_dispatch/journey/router.rb:26:in `each'
+  actionpack (5.0.3) lib/action_dispatch/journey/router.rb:26:in `serve'
+  actionpack (5.0.3) lib/action_dispatch/routing/route_set.rb:725:in `call'
+  rack (2.0.3) lib/rack/etag.rb:25:in `call'
+  rack (2.0.3) lib/rack/conditional_get.rb:38:in `call'
+  rack (2.0.3) lib/rack/head.rb:12:in `call'
+  rack (2.0.3) lib/rack/session/abstract/id.rb:232:in `context'
+  rack (2.0.3) lib/rack/session/abstract/id.rb:226:in `call'
+  actionpack (5.0.3) lib/action_dispatch/middleware/cookies.rb:613:in `call'
+  activerecord (5.0.3) lib/active_record/migration.rb:553:in `call'
+  actionpack (5.0.3) lib/action_dispatch/middleware/callbacks.rb:38:in `block in call'
+  activesupport (5.0.3) lib/active_support/callbacks.rb:97:in `__run_callbacks__'
+  activesupport (5.0.3) lib/active_support/callbacks.rb:750:in `_run_call_callbacks'
+  activesupport (5.0.3) lib/active_support/callbacks.rb:90:in `run_callbacks'
+  actionpack (5.0.3) lib/action_dispatch/middleware/callbacks.rb:36:in `call'
+  actionpack (5.0.3) lib/action_dispatch/middleware/executor.rb:12:in `call'
+  actionpack (5.0.3) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+  better_errors (2.1.1) lib/better_errors/middleware.rb:84:in `protected_app_call'
+  better_errors (2.1.1) lib/better_errors/middleware.rb:79:in `better_errors_call'
+  better_errors (2.1.1) lib/better_errors/middleware.rb:57:in `call'
+  actionpack (5.0.3) lib/action_dispatch/middleware/debug_exceptions.rb:49:in `call'
+  web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+  web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+  web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+  actionpack (5.0.3) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+  railties (5.0.3) lib/rails/rack/logger.rb:36:in `call_app'
+  railties (5.0.3) lib/rails/rack/logger.rb:24:in `block in call'
+  activesupport (5.0.3) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+  activesupport (5.0.3) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (5.0.3) lib/active_support/tagged_logging.rb:69:in `tagged'
+  railties (5.0.3) lib/rails/rack/logger.rb:24:in `call'
+  sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+  actionpack (5.0.3) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+  rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+  rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+  activesupport (5.0.3) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  actionpack (5.0.3) lib/action_dispatch/middleware/executor.rb:12:in `call'
+  actionpack (5.0.3) lib/action_dispatch/middleware/static.rb:136:in `call'
+  rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+  railties (5.0.3) lib/rails/engine.rb:522:in `call'
+  puma (3.9.1) lib/puma/configuration.rb:224:in `call'
+  puma (3.9.1) lib/puma/server.rb:602:in `handle_request'
+  puma (3.9.1) lib/puma/server.rb:435:in `process_client'
+  puma (3.9.1) lib/puma/server.rb:299:in `block in run'
+  puma (3.9.1) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+
+Started POST "/users" for 127.0.0.1 at 2017-06-19 15:17:58 -0700
+Processing by UsersController#create as */*
+  Parameters: {"user"=>{"name"=>"Jules", "email"=>"j@app"}}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "j@app"], ["LIMIT", 1]]
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "users" ("name", "email") VALUES (?, ?)[0m  [["name", "Jules"], ["email", "j@app"]]
+  [1m[35m (1.8ms)[0m  [1m[36mcommit transaction[0m
+Completed 200 OK in 6ms (Views: 0.4ms | ActiveRecord: 2.6ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2017-06-19 15:18:21 -0700
+Processing by UsersController#index as */*
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+Completed 200 OK in 2ms (Views: 1.3ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2017-06-19 15:30:02 -0700
+Processing by UsersController#create as */*
+  Parameters: {"user"=>{"name"=>"Aaron"}}
+  [1m[35m (5.4ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Exists (0.7ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[35m (0.4ms)[0m  [1m[31mrollback transaction[0m
+Completed 500 Internal Server Error in 46ms (ActiveRecord: 6.5ms)
+
+
+
+ArgumentError - wrong number of arguments (given 0, expected 2):
+  activemodel (5.0.3) lib/active_model/errors.rb:438:in `full_message'
+  app/controllers/users_controller.rb:12:in `create'
+  actionpack (5.0.3) lib/action_controller/metal/basic_implicit_render.rb:4:in `send_action'
+  actionpack (5.0.3) lib/abstract_controller/base.rb:188:in `process_action'
+  actionpack (5.0.3) lib/action_controller/metal/rendering.rb:30:in `process_action'
+  actionpack (5.0.3) lib/abstract_controller/callbacks.rb:20:in `block in process_action'
+  activesupport (5.0.3) lib/active_support/callbacks.rb:97:in `__run_callbacks__'
+  activesupport (5.0.3) lib/active_support/callbacks.rb:750:in `_run_process_action_callbacks'
+  activesupport (5.0.3) lib/active_support/callbacks.rb:90:in `run_callbacks'
+  actionpack (5.0.3) lib/abstract_controller/callbacks.rb:19:in `process_action'
+  actionpack (5.0.3) lib/action_controller/metal/rescue.rb:20:in `process_action'
+  actionpack (5.0.3) lib/action_controller/metal/instrumentation.rb:32:in `block in process_action'
+  activesupport (5.0.3) lib/active_support/notifications.rb:164:in `block in instrument'
+  activesupport (5.0.3) lib/active_support/notifications/instrumenter.rb:21:in `instrument'
+  activesupport (5.0.3) lib/active_support/notifications.rb:164:in `instrument'
+  actionpack (5.0.3) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+  actionpack (5.0.3) lib/action_controller/metal/params_wrapper.rb:248:in `process_action'
+  activerecord (5.0.3) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (5.0.3) lib/abstract_controller/base.rb:126:in `process'
+  actionview (5.0.3) lib/action_view/rendering.rb:30:in `process'
+  actionpack (5.0.3) lib/action_controller/metal.rb:190:in `dispatch'
+  actionpack (5.0.3) lib/action_controller/metal.rb:262:in `dispatch'
+  actionpack (5.0.3) lib/action_dispatch/routing/route_set.rb:50:in `dispatch'
+  actionpack (5.0.3) lib/action_dispatch/routing/route_set.rb:32:in `serve'
+  actionpack (5.0.3) lib/action_dispatch/journey/router.rb:39:in `block in serve'
+  actionpack (5.0.3) lib/action_dispatch/journey/router.rb:26:in `each'
+  actionpack (5.0.3) lib/action_dispatch/journey/router.rb:26:in `serve'
+  actionpack (5.0.3) lib/action_dispatch/routing/route_set.rb:725:in `call'
+  rack (2.0.3) lib/rack/etag.rb:25:in `call'
+  rack (2.0.3) lib/rack/conditional_get.rb:38:in `call'
+  rack (2.0.3) lib/rack/head.rb:12:in `call'
+  rack (2.0.3) lib/rack/session/abstract/id.rb:232:in `context'
+  rack (2.0.3) lib/rack/session/abstract/id.rb:226:in `call'
+  actionpack (5.0.3) lib/action_dispatch/middleware/cookies.rb:613:in `call'
+  activerecord (5.0.3) lib/active_record/migration.rb:553:in `call'
+  actionpack (5.0.3) lib/action_dispatch/middleware/callbacks.rb:38:in `block in call'
+  activesupport (5.0.3) lib/active_support/callbacks.rb:97:in `__run_callbacks__'
+  activesupport (5.0.3) lib/active_support/callbacks.rb:750:in `_run_call_callbacks'
+  activesupport (5.0.3) lib/active_support/callbacks.rb:90:in `run_callbacks'
+  actionpack (5.0.3) lib/action_dispatch/middleware/callbacks.rb:36:in `call'
+  actionpack (5.0.3) lib/action_dispatch/middleware/executor.rb:12:in `call'
+  actionpack (5.0.3) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+  better_errors (2.1.1) lib/better_errors/middleware.rb:84:in `protected_app_call'
+  better_errors (2.1.1) lib/better_errors/middleware.rb:79:in `better_errors_call'
+  better_errors (2.1.1) lib/better_errors/middleware.rb:57:in `call'
+  actionpack (5.0.3) lib/action_dispatch/middleware/debug_exceptions.rb:49:in `call'
+  web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+  web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+  web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+  actionpack (5.0.3) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+  railties (5.0.3) lib/rails/rack/logger.rb:36:in `call_app'
+  railties (5.0.3) lib/rails/rack/logger.rb:24:in `block in call'
+  activesupport (5.0.3) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+  activesupport (5.0.3) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (5.0.3) lib/active_support/tagged_logging.rb:69:in `tagged'
+  railties (5.0.3) lib/rails/rack/logger.rb:24:in `call'
+  sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+  actionpack (5.0.3) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+  rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+  rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+  activesupport (5.0.3) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  actionpack (5.0.3) lib/action_dispatch/middleware/executor.rb:12:in `call'
+  actionpack (5.0.3) lib/action_dispatch/middleware/static.rb:136:in `call'
+  rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+  railties (5.0.3) lib/rails/engine.rb:522:in `call'
+  puma (3.9.1) lib/puma/configuration.rb:224:in `call'
+  puma (3.9.1) lib/puma/server.rb:602:in `handle_request'
+  puma (3.9.1) lib/puma/server.rb:435:in `process_client'
+  puma (3.9.1) lib/puma/server.rb:299:in `block in run'
+  puma (3.9.1) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+
+Started POST "/users" for 127.0.0.1 at 2017-06-19 15:30:23 -0700
+Processing by UsersController#create as */*
+  Parameters: {"user"=>{"name"=>"Aaron"}}
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+Completed 400 Bad Request in 58ms (Views: 1.7ms | ActiveRecord: 1.4ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2017-06-19 15:31:03 -0700
+Processing by UsersController#create as */*
+  Parameters: {"user"=>{"name"=>"Aaron"}}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+Completed 200 OK in 15ms (Views: 0.2ms | ActiveRecord: 1.1ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2017-06-19 15:31:04 -0700
+Processing by UsersController#create as */*
+  Parameters: {"user"=>{"name"=>"Aaron"}}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+Completed 200 OK in 6ms (Views: 0.2ms | ActiveRecord: 0.5ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2017-06-19 15:31:05 -0700
+Processing by UsersController#create as */*
+  Parameters: {"user"=>{"name"=>"Aaron"}}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+Completed 200 OK in 7ms (Views: 0.2ms | ActiveRecord: 0.5ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2017-06-19 15:31:18 -0700
+Processing by UsersController#create as */*
+  Parameters: {"user"=>{"name"=>"Aaron"}}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+Completed 422 Unprocessable Entity in 26ms (Views: 0.2ms | ActiveRecord: 11.3ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2017-06-19 15:31:19 -0700
+Processing by UsersController#create as */*
+  Parameters: {"user"=>{"name"=>"Aaron"}}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+Completed 422 Unprocessable Entity in 5ms (Views: 0.2ms | ActiveRecord: 0.3ms)
+
+
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to AlterRowsinUsers (20170619224054)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.3ms)[0m  [1m[35mCREATE TEMPORARY TABLE "ausers" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar NOT NULL, "email" varchar NOT NULL)[0m
+  [1m[35m (3.3ms)[0m  [1m[32mINSERT INTO "ausers" ("id","name","email")
+                     SELECT "id","name","email" FROM "users"[0m
+  [1m[35m (0.6ms)[0m  [1m[35mDROP TABLE "users"[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "email" varchar NOT NULL)[0m
+  [1m[35m (0.1ms)[0m  [1m[32mINSERT INTO "users" ("id","email")
+                     SELECT "id","email" FROM "ausers"[0m
+  [1m[35m (0.1ms)[0m  [1m[35mDROP TABLE "ausers"[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE TEMPORARY TABLE "ausers" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "email" varchar NOT NULL)[0m
+  [1m[35m (0.1ms)[0m  [1m[32mINSERT INTO "ausers" ("id","email")
+                     SELECT "id","email" FROM "users"[0m
+  [1m[35m (0.1ms)[0m  [1m[35mDROP TABLE "users"[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL)[0m
+  [1m[35m (0.1ms)[0m  [1m[32mINSERT INTO "users" ("id")
+                     SELECT "id" FROM "ausers"[0m
+  [1m[35m (0.1ms)[0m  [1m[35mDROP TABLE "ausers"[0m
+  [1m[35m (22.1ms)[0m  [1m[35mALTER TABLE "users" ADD "username" varchar[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20170619224054"]]
+  [1m[35m (1.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.7ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to CreateArtworks (20170619224639)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.5ms)[0m  [1m[35mCREATE TABLE "artworks" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar NOT NULL, "image_url" varchar NOT NULL, "artist_id" integer NOT NULL, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mselect sqlite_version(*)[0m
+  [1m[35m (27.2ms)[0m  [1m[35mCREATE UNIQUE INDEX "index_users_on_title_and_artist_id" ON "users" ("title", "artist_id")[0m
+  [1m[35m (0.5ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to CreateArtworks (20170619224639)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.6ms)[0m  [1m[35mCREATE TABLE "artworks" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar NOT NULL, "image_url" varchar NOT NULL, "artist_id" integer NOT NULL, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mselect sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  [1m[35mCREATE UNIQUE INDEX "index_artworks_on_title_and_artist_id" ON "artworks" ("title", "artist_id")[0m
+  [1m[35m (0.1ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_artworks_on_title_and_artist_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_artworks_on_title_and_artist_id' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE  INDEX "index_artworks_on_artist_id" ON "artworks" ("artist_id")[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20170619224639"]]
+  [1m[35m (16.0ms)[0m  [1m[36mcommit transaction[0m
+Migrating to ChangeUser (20170619224929)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.7ms)[0m  [1m[35mCREATE TEMPORARY TABLE "ausers" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "username" varchar)[0m
+  [1m[35m (0.5ms)[0m  [1m[32mINSERT INTO "ausers" ("id","username")
+                     SELECT "id","username" FROM "users"[0m
+  [1m[35m (1.1ms)[0m  [1m[35mDROP TABLE "users"[0m
+  [1m[35m (0.3ms)[0m  [1m[35mCREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL)[0m
+  [1m[35m (0.3ms)[0m  [1m[32mINSERT INTO "users" ("id")
+                     SELECT "id" FROM "ausers"[0m
+  [1m[35m (0.2ms)[0m  [1m[35mDROP TABLE "ausers"[0m
+  [1m[35m (22.2ms)[0m  [1m[35mALTER TABLE "users" ADD "username" varchar NOT NULL[0m
+  [1m[35m (0.5ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to ChangeUser (20170619224929)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.3ms)[0m  [1m[35mCREATE TEMPORARY TABLE "ausers" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "username" varchar)[0m
+  [1m[35m (0.4ms)[0m  [1m[32mINSERT INTO "ausers" ("id","username")
+                     SELECT "id","username" FROM "users"[0m
+  [1m[35m (0.6ms)[0m  [1m[35mDROP TABLE "users"[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL)[0m
+  [1m[35m (0.1ms)[0m  [1m[32mINSERT INTO "users" ("id")
+                     SELECT "id" FROM "ausers"[0m
+  [1m[35m (0.1ms)[0m  [1m[35mDROP TABLE "ausers"[0m
+  [1m[35m (0.5ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to ChangeUser (20170619224929)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.3ms)[0m  [1m[35mCREATE TEMPORARY TABLE "ausers" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "username" varchar)[0m
+  [1m[35m (6.1ms)[0m  [1m[32mINSERT INTO "ausers" ("id","username")
+                     SELECT "id","username" FROM "users"[0m
+  [1m[35m (0.6ms)[0m  [1m[35mDROP TABLE "users"[0m
+  [1m[35m (0.2ms)[0m  [1m[35mCREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL)[0m
+  [1m[35m (0.1ms)[0m  [1m[32mINSERT INTO "users" ("id")
+                     SELECT "id" FROM "ausers"[0m
+  [1m[35m (0.1ms)[0m  [1m[35mDROP TABLE "ausers"[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20170619224929"]]
+  [1m[35m (1.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.7ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_artworks_on_artist_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_artworks_on_artist_id' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_artworks_on_title_and_artist_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_artworks_on_title_and_artist_id' AND type='index'
+[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.6ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to AddUserColumn (20170619232245)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.7ms)[0m  [1m[35mALTER TABLE "users" ADD "username" varchar NOT NULL[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to AddUserColumn (20170619232245)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.7ms)[0m  [1m[35mALTER TABLE "users" ADD "username" varchar NOT NULL[0m
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to AddUserColumn (20170619232245)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.6ms)[0m  [1m[35mALTER TABLE "users" ADD "username" varchar[0m
+  [1m[35m (0.2ms)[0m  [1m[35mCREATE TEMPORARY TABLE "ausers" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "username" varchar)[0m
+  [1m[35m (0.4ms)[0m  [1m[32mINSERT INTO "ausers" ("id","username")
+                     SELECT "id","username" FROM "users"[0m
+  [1m[35m (0.3ms)[0m  [1m[35mDROP TABLE "users"[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "username" varchar NOT NULL)[0m
+  [1m[35m (0.7ms)[0m  [1m[32mINSERT INTO "users" ("id","username")
+                     SELECT "id","username" FROM "ausers"[0m
+  [1m[35m (0.5ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to AddUserColumn (20170619232245)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.5ms)[0m  [1m[35mALTER TABLE "users" ADD "username" varchar[0m
+  [1m[35m (0.3ms)[0m  [1m[35mCREATE TEMPORARY TABLE "ausers" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "username" varchar)[0m
+  [1m[35m (0.4ms)[0m  [1m[32mINSERT INTO "ausers" ("id","username")
+                     SELECT "id","username" FROM "users"[0m
+  [1m[35m (0.4ms)[0m  [1m[35mDROP TABLE "users"[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "username" varchar NOT NULL)[0m
+  [1m[35m (0.7ms)[0m  [1m[32mINSERT INTO "users" ("id","username")
+                     SELECT "id","username" FROM "ausers"[0m
+  [1m[35m (0.5ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to AddUserColumn (20170619232245)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.6ms)[0m  [1m[35mALTER TABLE "users" ADD "username" varchar NOT NULL[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to AddUserColumn (20170619232245)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.7ms)[0m  [1m[35mALTER TABLE "users" ADD "username" varchar NOT NULL[0m
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mUser Load (17.9ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = ?[0m  [["id", 1]]
+  [1m[35m (1.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = ?[0m  [["id", 2]]
+  [1m[35m (1.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = ?[0m  [["id", 3]]
+  [1m[35m (1.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = ?[0m  [["id", 4]]
+  [1m[35m (1.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = ?[0m  [["id", 5]]
+  [1m[35m (1.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to AddUserColumn (20170619232245)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.6ms)[0m  [1m[35mALTER TABLE "users" ADD "username" varchar NOT NULL[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.7ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "environment"]]
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "environment"]]
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "environment"]]
+  [1m[35m (8.7ms)[0m  [1m[35mCREATE TABLE "artworks" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar NOT NULL, "image_url" varchar NOT NULL, "artist_id" integer NOT NULL, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[35m (0.3ms)[0m  [1m[34mselect sqlite_version(*)[0m
+  [1m[35m (4.8ms)[0m  [1m[35mCREATE  INDEX "index_artworks_on_artist_id" ON "artworks" ("artist_id")[0m
+  [1m[35m (0.4ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_artworks_on_artist_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_artworks_on_artist_id' AND type='index'
+[0m
+  [1m[35m (18.6ms)[0m  [1m[35mCREATE UNIQUE INDEX "index_artworks_on_title_and_artist_id" ON "artworks" ("title", "artist_id")[0m
+  [1m[35m (39.3ms)[0m  [1m[35mCREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL)[0m
+  [1m[35m (8.1ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL PRIMARY KEY)[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT version FROM "schema_migrations"[0m
+  [1m[35m (8.0ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES (20170619224929)[0m
+  [1m[35m (18.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES
+(20170619215153),
+(20170619224054),
+(20170619224639);
+
+[0m
+  [1m[35m (34.0ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" varchar NOT NULL PRIMARY KEY, "value" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.3ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "environment"], ["value", "development"], ["created_at", "2017-06-19 23:40:39.303116"], ["updated_at", "2017-06-19 23:40:39.303116"]]
+  [1m[35m (2.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (2.2ms)[0m  [1m[35mCREATE TABLE "artworks" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar NOT NULL, "image_url" varchar NOT NULL, "artist_id" integer NOT NULL, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[35m (0.4ms)[0m  [1m[34mselect sqlite_version(*)[0m
+  [1m[35m (2.6ms)[0m  [1m[35mCREATE  INDEX "index_artworks_on_artist_id" ON "artworks" ("artist_id")[0m
+  [1m[35m (1.3ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_artworks_on_artist_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_artworks_on_artist_id' AND type='index'
+[0m
+  [1m[35m (2.0ms)[0m  [1m[35mCREATE UNIQUE INDEX "index_artworks_on_title_and_artist_id" ON "artworks" ("title", "artist_id")[0m
+  [1m[35m (1.9ms)[0m  [1m[35mCREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL)[0m
+  [1m[35m (1.6ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL PRIMARY KEY)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT version FROM "schema_migrations"[0m
+  [1m[35m (1.6ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES (20170619224929)[0m
+  [1m[35m (1.7ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES
+(20170619215153),
+(20170619224054),
+(20170619224639);
+
+[0m
+  [1m[35m (2.5ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" varchar NOT NULL PRIMARY KEY, "value" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.3ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.8ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (3.0ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "environment"], ["value", "development"], ["created_at", "2017-06-19 23:40:39.348911"], ["updated_at", "2017-06-19 23:40:39.348911"]]
+  [1m[35m (1.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to AddUserColumn (20170619232245)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (1.0ms)[0m  [1m[35mALTER TABLE "users" ADD "username" varchar NOT NULL[0m
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "environment"]]
+  [1m[36mActiveRecord::SchemaMigration Load (0.0ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "environment"]]
+  [1m[36mActiveRecord::SchemaMigration Load (0.0ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "environment"]]
+  [1m[35m (1.5ms)[0m  [1m[35mCREATE TABLE "artworks" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar NOT NULL, "image_url" varchar NOT NULL, "artist_id" integer NOT NULL, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mselect sqlite_version(*)[0m
+  [1m[35m (1.2ms)[0m  [1m[35mCREATE  INDEX "index_artworks_on_artist_id" ON "artworks" ("artist_id")[0m
+  [1m[35m (0.1ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_artworks_on_artist_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_artworks_on_artist_id' AND type='index'
+[0m
+  [1m[35m (1.3ms)[0m  [1m[35mCREATE UNIQUE INDEX "index_artworks_on_title_and_artist_id" ON "artworks" ("title", "artist_id")[0m
+  [1m[35m (1.4ms)[0m  [1m[35mCREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL)[0m
+  [1m[35m (6.8ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL PRIMARY KEY)[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT version FROM "schema_migrations"[0m
+  [1m[35m (2.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES (20170619224929)[0m
+  [1m[35m (1.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES
+(20170619215153),
+(20170619224054),
+(20170619224639);
+
+[0m
+  [1m[35m (1.4ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" varchar NOT NULL PRIMARY KEY, "value" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "environment"], ["value", "development"], ["created_at", "2017-06-19 23:42:15.525610"], ["updated_at", "2017-06-19 23:42:15.525610"]]
+  [1m[35m (2.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (1.2ms)[0m  [1m[35mCREATE TABLE "artworks" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar NOT NULL, "image_url" varchar NOT NULL, "artist_id" integer NOT NULL, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mselect sqlite_version(*)[0m
+  [1m[35m (1.1ms)[0m  [1m[35mCREATE  INDEX "index_artworks_on_artist_id" ON "artworks" ("artist_id")[0m
+  [1m[35m (0.1ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_artworks_on_artist_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_artworks_on_artist_id' AND type='index'
+[0m
+  [1m[35m (1.8ms)[0m  [1m[35mCREATE UNIQUE INDEX "index_artworks_on_title_and_artist_id" ON "artworks" ("title", "artist_id")[0m
+  [1m[35m (1.3ms)[0m  [1m[35mCREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL)[0m
+  [1m[35m (1.7ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL PRIMARY KEY)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT version FROM "schema_migrations"[0m
+  [1m[35m (1.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES (20170619224929)[0m
+  [1m[35m (1.8ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES
+(20170619215153),
+(20170619224054),
+(20170619224639);
+
+[0m
+  [1m[35m (1.9ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" varchar NOT NULL PRIMARY KEY, "value" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.3ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "environment"], ["value", "development"], ["created_at", "2017-06-19 23:42:15.569270"], ["updated_at", "2017-06-19 23:42:15.569270"]]
+  [1m[35m (1.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to AddUserColumn (20170619232245)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (1.0ms)[0m  [1m[35mALTER TABLE "users" ADD "username" varchar NOT NULL[0m
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mUser Load (27.8ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to AddUserColumn (20170619232245)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.7ms)[0m  [1m[35mALTER TABLE "users" ADD "username" varchar DEFAULT '' NOT NULL[0m
+  [1m[35m (0.1ms)[0m  [1m[34mselect sqlite_version(*)[0m
+  [1m[35m (0.4ms)[0m  [1m[35mCREATE UNIQUE INDEX "index_users_on_username" ON "users" ("username")[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20170619232245"]]
+  [1m[35m (1.1ms)[0m  [1m[36mcommit transaction[0m
+Migrating to CreateArtworkShares (20170619233403)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.7ms)[0m  [1m[35mCREATE TABLE "artwork_shares" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "artwork_id" integer NOT NULL, "viewer_id" integer NOT NULL, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE  INDEX "index_artwork_shares_on_artwork_id" ON "artwork_shares" ("artwork_id")[0m
+  [1m[35m (0.1ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_artwork_shares_on_artwork_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_artwork_shares_on_artwork_id' AND type='index'
+[0m
+  [1m[35m (0.2ms)[0m  [1m[35mCREATE  INDEX "index_artwork_shares_on_viewer_id" ON "artwork_shares" ("viewer_id")[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20170619233403"]]
+  [1m[35m (34.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.7ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_artwork_shares_on_viewer_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_artwork_shares_on_viewer_id' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_artwork_shares_on_artwork_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_artwork_shares_on_artwork_id' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_artworks_on_title_and_artist_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_artworks_on_title_and_artist_id' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_artworks_on_artist_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_artworks_on_artist_id' AND type='index'
+[0m
+  [1m[35m (0.2ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_users_on_username' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_users_on_username' AND type='index'
+[0m
+  [1m[36mActiveRecord::SchemaMigration Load (23.2ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
