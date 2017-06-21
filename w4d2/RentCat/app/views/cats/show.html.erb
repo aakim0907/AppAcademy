@@ -1,0 +1,52 @@
+<h1>Information about <%= @cat.name %></h1>
+
+<table>
+  <tr>
+      <th><h3>All about <%= @cat.name %></h3></th>
+  </tr>
+  <tr>
+    <td> Age </td>
+    <td> <%= @cat.age %> </td>
+  </tr>
+  <tr>
+    <td> Birthday </td>
+    <td> <%= @cat.birth_date %> </td>
+  </tr>
+  <tr>
+    <td> Color </td>
+    <td> <%= @cat.color %> </td>
+  </tr>
+  <tr>
+    <td> Sex </td>
+    <td> <%= @cat.sex %> </td>
+  </tr>
+  <tr>
+    <td> Description </td>
+    <td> <%= @cat.description %> </td>
+  </tr>
+</table>
+
+  <br>
+  <h3>Here are all the current requests for <%= @cat.name %></h3>
+  <% requests = CatRentalRequest %>
+  <%  .where(cat_id: @cat.id) %>
+  <%  .order(:start_date) %>
+
+  <% if requests.empty? %>
+  <p>There are no requests for the cat yet! :)</p>
+  <% else %>
+  <ul>
+    <% requests.each do |request| %>
+      <li>
+        <%= request.start_date %> to <%= request.end_date %> : <%= request.status %>
+        <% if request.pending? %><%= button_to "Approve meow", approve_url %><% end %>
+      </li>
+    <% end %>
+  </ul>
+  <% end %>
+
+
+<br>
+<%= link_to "Request this cat!", new_cat_rental_request_url %>
+<br>
+<%= link_to "Edit this cat!", edit_cat_url(@cat) %>
