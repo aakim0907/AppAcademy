@@ -75,6 +75,10 @@ Projects completed at AppAcademy
 * First Routes and Controllers
 * Art Share API
 
+### [w4d2](https://github.com/aakim0907/AppAcademy/tree/master/w4d2)
+**Rails View**
+* 99 Cats
+
 ## Week 5
 
 ## Week 6
