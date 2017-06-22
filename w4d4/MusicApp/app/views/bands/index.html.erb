@@ -1,0 +1,15 @@
+<h1> ::WELCOME TO AWESOME MUSIC APP:: </h1>
+
+<h3>Bands</h3>
+
+<% if @bands.empty? %>
+  <p>No bands yet! Add your favorite band to our list!</p>
+<% else %>
+  <% @bands.each do |band| %>
+  <ul>
+    <li> <%= band %> </li>
+  </ul>
+  <% end %>
+<% end %>
+
+<%= button_to "Add New Band", new_band_url, method: :get %>

@@ -12,7 +12,7 @@ class SessionsController < ApplicationController
       params[:user][:user_name],
       params[:user][:password])
     if user
-      long_in_user!(user)
+      session[:session_token] = user.session_token
       redirect_to cats_url
     else
       flash.now[:errors] = ["Invalid username or password!"]
