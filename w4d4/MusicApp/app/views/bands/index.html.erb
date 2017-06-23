@@ -5,11 +5,11 @@
 <% if @bands.empty? %>
   <p>No bands yet! Add your favorite band to our list!</p>
 <% else %>
-  <% @bands.each do |band| %>
   <ul>
-    <li> <%= band %> </li>
-  </ul>
+  <% @bands.each do |band| %>
+    <li> <%= link_to band.name, band_url(band) %> </li>
   <% end %>
+  </ul>
 <% end %>
 
 <%= button_to "Add New Band", new_band_url, method: :get %>

@@ -16,11 +16,11 @@ class BandsController < ApplicationController
 
   def create
     @band = Band.new(band_params)
-    if @band.save!
+    if @band.save
       redirect_to band_url(@band)
     else
-      flash.now[:errors] = band.errors.full_messages
-      redirect_to new_band_url
+      flash.now[:errors] = @band.errors.full_messages
+      render :new
     end
   end
 
@@ -52,7 +52,7 @@ class BandsController < ApplicationController
   private
 
   def selected_band
-    Band.find_by_id(id)
+    Band.find_by_id(params[:id])
   end
 
   def band_params
