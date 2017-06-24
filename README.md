@@ -79,6 +79,18 @@ Projects completed at AppAcademy
 **Rails View**
 * 99 Cats
 
+### [w4d3](https://github.com/aakim0907/AppAcademy/tree/master/w4d3)
+**Cookies and Authentication, Hashing and Salting, Auth Pattern**
+* 99 Cats2: Auth
+
+### [w4d4](https://github.com/aakim0907/AppAcademy/tree/master/w4d4)
+**Helpers, Layouts, and Partials**
+* Music App
+
+### [w4d5](https://github.com/aakim0907/AppAcademy/tree/master/w4d5)
+**Rails Testing: Setup, Models, Factories, Controllers, Capybara**
+* Goal App
+
 ## Week 5
 
 ## Week 6
