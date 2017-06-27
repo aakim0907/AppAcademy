@@ -92,6 +92,9 @@ Projects completed at AppAcademy
 * Goal App
 
 ## Week 5
+### [w5d1](https://github.com/aakim0907/AppAcademy/tree/master/w5d1)
+**Polymorphic Associations, Checkboxes and id Setters Reference**
+* RedditClone
 
 ## Week 6
 
