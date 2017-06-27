@@ -27,6 +27,8 @@ class ControllerBase
     @res["Location"] = url
 
     @already_built_response = true
+
+    session.store_session(@res)
   end
 
   # Populate the response with content.
@@ -39,6 +41,8 @@ class ControllerBase
     @res["Content-Type"] = content_type
 
     @already_built_response = true
+
+    session.store_session(@res)
   end
 
   # use ERB and binding to evaluate templates
