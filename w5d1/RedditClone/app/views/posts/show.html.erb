@@ -1,0 +1,50 @@
+<h2><%=@post.title%></h2>
+
+URL: <%= @post.url.empty? ? "N/A" : @post.url %>
+<br>
+Content: <%= @post.content.empty? ? "N/A" : @post.content %>
+<br>
+Subjects:
+<ul>
+<% @post.sub_ids.each do |id| %>
+<li><%= link_to Sub.find(id).title, sub_url(id) %></li>
+<% end %>
+</ul>
+
+<br>
+
+<%= link_to "Edit this Post", edit_post_url %>
+
+<h3>Comments</h3>
+
+<%@post.top_level_comments.each do |comment|%>
+  <%=render "comments/comment", comment: comment%>
+<%end%>
+
+<!-- <% @post.comments.where(parent_comment_id: nil).each do |comment| %>
+<ul>
+  <li><%=link_to comment.content, comment_url(comment)%></li>
+  <ul>
+    <%comment.child_comments.each do |child|%>
+      <li> <%=link_to child.content, comment_url(child)%> </li>
+    <%end%>
+  </ul>
+</ul>
+<% end %> -->
+
+
+<h3>Adding a comment</h3>
+<form action="<%=comments_url%>" method="post">
+  <input type="hidden" name="authenticity_token" value="<%=form_authenticity_token%>">
+
+  <input type="hidden" name="comment[post_id]" value="<%=@post.id%>">
+
+  <label>Content
+    <input type="textarea" name="comment[content]" value="">
+  </label>
+
+  <br>
+
+  <input type="submit" name="" value="Add Comment">
+
+</form>

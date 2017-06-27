@@ -1,0 +1,13 @@
+<h2>Index Sub</h2>
+<ul>
+
+<%@subs.each do |sub|%>
+<li>
+  <%=link_to sub.title, sub_url(sub)%>
+</li>
+<%end %>
+</ul>
+
+<br>
+
+<%= link_to "Add New Link", new_sub_url %>
