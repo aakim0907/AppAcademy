@@ -33,13 +33,25 @@ class ControllerBase
   def render_content(content, content_type)
     raise "double render error" if already_built_response?
     @res.write(content)
-    @res['Content-Type'] = content_type
+    @res["Content-Type"] = content_type
     @already_built_response = true
   end
 
   # use ERB and binding to evaluate templates
   # pass the rendered html to render_content
   def render(template_name)
+    dir_path = File.dirname(__FILE__)
+    template_fname = File.join(
+      dir_path, "..",
+      "views", self.class.name.underscore, "#{template_name}.html.erb"
+    )
+
+    template_code = File.read(template_fname)
+
+    render_content(
+      ERB.new(template_code).result(binding),
+      "text/html"
+    )
   end
 
   # method exposing a `Session` object
