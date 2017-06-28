@@ -96,6 +96,10 @@ Projects completed at AppAcademy
 **Polymorphic Associations, Checkboxes and id Setters Reference**
 * RedditClone
 
+### [w5d2](https://github.com/aakim0907/AppAcademy/tree/master/w5d2)
+**Rails Lite, HTTP, Rack**
+* Rails Lite
+
 ## Week 6
 
 ## Week 7
