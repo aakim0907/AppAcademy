@@ -100,6 +100,19 @@ Projects completed at AppAcademy
 **Rails Lite, HTTP, Rack**
 * Rails Lite
 
+### [w5d3](https://github.com/aakim0907/AppAcademy/tree/master/w5d3)
+**Intro to JavaScript, Syntax, Data Types, Functions, Closures and Scope**
+* Arrays
+* Enumerable
+* Iteration
+* Recursion
+* Classes
+
+### [w5d4](https://github.com/aakim0907/AppAcademy/tree/master/w5d4)
+**Function Invocation, ES6 Class Syntax**
+* Intro to Callbacks
+* Towers of Hanoi
+
 ## Week 6
 
 ## Week 7
