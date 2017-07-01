@@ -1,11 +1,11 @@
 Function.prototype.myBind = function(context) {
-  return () => this.apply(context);
-};
+  return () => this.apply(context)
+}
 
-Function.prototype.myBindWithArg = function(context, ...bindArgs) {
-  return (...callArgs) =>
+Function.myBindWithArg = function(context, ...bindArgs) {
+  return (...bindArgs) =>
     { return this.apply(context, bindArgs.concat(callArgs)); };
-};
+}
 
 
 class Lamp {
