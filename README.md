@@ -113,6 +113,12 @@ Projects completed at AppAcademy
 * Intro to Callbacks
 * Towers of Hanoi
 
+### [w5d5](https://github.com/aakim0907/AppAcademy/tree/master/w5d5)
+**Prototype Chain and Inheritance, Webpack, Canvas**
+* Arguments exercise
+* Prototypal Inheritance
+* Asteroids
+
 ## Week 6
 
 ## Week 7
