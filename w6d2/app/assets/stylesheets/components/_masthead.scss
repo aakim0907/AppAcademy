@@ -11,7 +11,7 @@
 	top: -15px;
 	left: calc(50% - (177.78px/2));
 	background: white;
-	border: 1px solid $light-gray;
+	border: 2px solid $light-gray;
 	border-bottom: none;
 	border-top-left-radius: 3px;
 	border-top-right-radius: 3px;
@@ -60,7 +60,7 @@
 }
 
 .masthead-links a,
-.masthead-links button, 
+.masthead-links button,
 .masthead-links time {
 	margin-right: 10px;
 }
@@ -71,4 +71,12 @@
 
 .masthead-links strong {
 	color: green;
+}
+
+.masthead-links li:last-child {
+	border: none;
+}
+
+.language-nav li:first-of-type a {
+	font-weight: bold;
 }
