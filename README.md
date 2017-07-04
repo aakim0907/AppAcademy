@@ -125,6 +125,10 @@ Projects completed at AppAcademy
 * jQuery Tic Tac Toe
 * jQuery Towers of Hanoi
 
+### [w6d2](https://github.com/aakim0907/AppAcademy/tree/master/w6d2)
+**CSS**
+* App Academy Times
+
 ## Week 7
 
 ## Week 8 
