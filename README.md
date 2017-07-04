@@ -120,6 +120,10 @@ Projects completed at AppAcademy
 * Asteroids
 
 ## Week 6
+### [w6d1](https://github.com/aakim0907/AppAcademy/tree/master/w6d1)
+**Document Object Model, jQuery**
+* jQuery Tic Tac Toe
+* jQuery Towers of Hanoi
 
 ## Week 7
 
