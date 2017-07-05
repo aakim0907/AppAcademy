@@ -1,6 +1,6 @@
 default: &default
   adapter: postgresql
-  host: localhost
+  host: /var/run/postgresql
   pool: 5
   timeout: 5000
 
