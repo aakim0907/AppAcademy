@@ -26,8 +26,16 @@ button {
 }
 
 button:hover {
-	// background-color:
-	// border-color:
+	background-color: $blue;
+  border-color: $darkest-blue;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+.hidden {
+	display: none;
 }
 /*
 	Header Rules
