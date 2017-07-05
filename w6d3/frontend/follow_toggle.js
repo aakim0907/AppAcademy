@@ -1,39 +1,58 @@
 const APIUtil = require("./api_util.js");
 
 class FollowToggle {
-  constructor(button) {
-    this.$button = $(button);
+  constructor(el) {
+    this.$button = $(el);
     this.userId = this.$button.data("user-id");
     this.followState = this.$button.data("initial-follow-state");
 
     this.render();
-    this.$button.on('click', this.handleClick.bind(this));
+    this.$button.on("click", this.handleClick.bind(this));
   }
 
   render() {
-    if (this.followState === "unfollowed") {
-      this.$button.text("Follow");
-    } else {
-      this.$button.text("Unfollow");
+    switch(this.followState){
+      case "followed":
+        this.$button.prop("disabled", false);
+        this.$button.text("Unfollow");
+        break;
+      case "unfollowed":
+        this.$button.prop("disabled", false);
+        this.$button.text("Follow");
+        break;
+      case "following":
+        this.$button.prop("disabled", true);
+        this.$button.text("(following...)");
+        break;
+      case "unfollowing":
+        this.$button.prop("disabled", true);
+        this.$button.text("(unfollowing...)");
+        break;
     }
   }
 
   handleClick(event) {
+    const button = this;
+
     event.preventDefault();
 
-    if (this.followState === "unfollowed") {
-      APIUtil.followUser(this.userId).then(() => {
-        this.followState = "followed";
-        this.render();
-      });
-    } else if (this.followState === "followed") {
+    if (this.followState === "followed") {
+      this.followState = "unfollowing";
+      this.render();
       APIUtil.unfollowUser(this.userId).then(() => {
-        this.followState = "unfollowed";
-        this.render();
+        button.followState = "unfollowed";
+        button.render();
+      });
+    } else if (this.followState === "unfollowed") {
+      this.followState = "following";
+      this.render();
+      APIUtil.followUser(this.userId).then(() => {
+        button.followState = "followed";
+        button.render();
       });
     }
-
   }
+
 }
 
 module.exports = FollowToggle;
