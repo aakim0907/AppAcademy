@@ -13,7 +13,7 @@ Projects completed at AppAcademy
 
 ### [w1d3](https://github.com/aakim0907/AppAcademy/tree/master/w1d3)
 **Recursion**
-* Recursion
+* Recursion Exercise
 
 ### [w1d4](https://github.com/aakim0907/AppAcademy/tree/master/w1d4)
 **Git, Git workflow**
@@ -77,11 +77,11 @@ Projects completed at AppAcademy
 
 ### [w4d2](https://github.com/aakim0907/AppAcademy/tree/master/w4d2)
 **Rails View**
-* 99 Cats
+* 99 Cats App
 
 ### [w4d3](https://github.com/aakim0907/AppAcademy/tree/master/w4d3)
 **Cookies and Authentication, Hashing and Salting, Auth Pattern**
-* 99 Cats2: Auth
+* 99 Cats App2: User Authentication
 
 ### [w4d4](https://github.com/aakim0907/AppAcademy/tree/master/w4d4)
 **Helpers, Layouts, and Partials**
@@ -94,7 +94,7 @@ Projects completed at AppAcademy
 ## Week 5
 ### [w5d1](https://github.com/aakim0907/AppAcademy/tree/master/w5d1)
 **Polymorphic Associations, Checkboxes and id Setters Reference**
-* RedditClone
+* Reddit Clone
 
 ### [w5d2](https://github.com/aakim0907/AppAcademy/tree/master/w5d2)
 **Rails Lite, HTTP, Rack**
