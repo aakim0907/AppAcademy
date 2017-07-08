@@ -129,6 +129,18 @@ Projects completed at AppAcademy
 **CSS**
 * App Academy Times
 
+### [w6d3](https://github.com/aakim0907/AppAcademy/tree/master/w6d3)
+**AJAX, Promises**
+* AJAX Twitter
+
+### [w6d4](https://github.com/aakim0907/AppAcademy/tree/master/w6d4)
+**Event Delegation and Propagation, Vanilla JavaScript**
+* jQuery Lite
+
+### [w6d5](https://github.com/aakim0907/AppAcademy/tree/master/w6d5)
+**NPM, Webpack, Object Destructuring, React: Transpilation, Functional Components**
+* React Widgets(Clock, Weather, Autocomplete, Tabs)
+
 ## Week 7
 
 ## Week 8 
