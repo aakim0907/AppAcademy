@@ -142,6 +142,9 @@ Projects completed at AppAcademy
 * React Widgets(Clock, Weather, Autocomplete, Tabs)
 
 ## Week 7
+### [w7d1](https://github.com/aakim0907/AppAcademy/tree/master/w7d1)
+**Flux & Redux (Store, Reducers, Actions, Containers, Selectors**
+* TODOs App
 
 ## Week 8 
 
