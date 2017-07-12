@@ -31,13 +31,13 @@ class TodoForm extends React.Component {
       <div>
         <form onSubmit={ self.handleSubmit }>
 
-          <label>Title:
+          <label>Title
             <input type="text" value={self.state.title} onChange={self.handleTitleChange}></input>
           </label>
           <br/>
 
-          <label>Body:
-            <input type="textarea" value={self.state.body} onChange={self.handleBodyChange}></input>
+          <label>Body
+            <input type="text" value={self.state.body} onChange={self.handleBodyChange}></input>
           </label>
           <br/>
 

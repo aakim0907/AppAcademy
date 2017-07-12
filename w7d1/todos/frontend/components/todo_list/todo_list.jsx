@@ -5,22 +5,11 @@ import TodoListItem from './todo_list_item';
 import TodoForm from './todo_form';
 
 
-// const TodoList = ({todos, receiveTodo}) => (
-//   <div>
-//     <ul>
-//       {todos.map( (todo,idx) => <TodoListItem todo={todo} key={idx}/> )}
-//     </ul>
-//     <TodoForm receiveTodo={receiveTodo}/>
-//   </div>
-//
-// );
-
 const TodoList = ({todos, receiveTodo, removeTodo}) => {
   return (
     <div>
         <ul>
-          {todos.map( (todo,idx) => <TodoListItem todo={todo} key={idx} removeTodo={removeTodo}/> )}
-
+          {todos.map( (todo,idx) => <TodoListItem todo={todo} key={idx} removeTodo={removeTodo} receiveTodo={receiveTodo}/>)}
         </ul>
         <TodoForm receiveTodo={receiveTodo}/>
       </div>
