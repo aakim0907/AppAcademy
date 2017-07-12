@@ -143,8 +143,12 @@ Projects completed at AppAcademy
 
 ## Week 7
 ### [w7d1](https://github.com/aakim0907/AppAcademy/tree/master/w7d1)
-**Flux & Redux (Store, Reducers, Actions, Containers, Selectors**
+**Flux & Redux (Store, Reducers, Actions, Containers, Selectors)**
 * TODOs App
+
+### [w7d2](https://github.com/aakim0907/AppAcademy/tree/master/w7d2)
+**Flux & Redux (Middleware, Thunks, Namespacing)**
+* continuing TODOs App in Rails
 
 ## Week 8 
 
