@@ -148,8 +148,22 @@ Projects completed at AppAcademy
 
 ### [w7d2](https://github.com/aakim0907/AppAcademy/tree/master/w7d2)
 **Flux & Redux (Middleware, Thunks, Namespacing)**
-* continuing TODOs App in Rails
+* Continue TODOs App in Rails
+
+### [w7d3](https://github.com/aakim0907/AppAcademy/tree/master/w7d3)
+**Jbuilder, Normalizing Redux State Shape**
+* Jbuilder exercise
+* Pokedex
+
+### w7d4
+**React Router**
+* Continue Pokedex
+
+### [w7d5](https://github.com/aakim0907/AppAcademy/tree/master/w7d5)
+**Frontend Auth**
+* BenchBnB
 
 ## Week 8 
-
-## Week 9
+### [w8d1](https://github.com/aakim0907/AppAcademy/tree/master/w8d1)
+**UX/UI Layout Practice**
+* Continue BenchBnB
